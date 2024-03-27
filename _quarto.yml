@@ -2,18 +2,18 @@ project:
   type: website
 
 website:
-  title: "Your_Name Data Science Portfolio"
+  title: "Adam Ulrich's Data Science Portfolio"
   favicon: Images/favicon.png
   back-to-top-navigation: true
-  repo-url: https://github.com/your_url
+  repo-url: https://github.com/adamulrich
   #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line
 
   page-footer: 
     border: true
-    left: "Your_Name 2023©"
+    left: "Adam Ulrich 2024©"
     right: 
       - icon: linkedin
-        href: Your_LinkedIn_URL
+        href: https://www.linkedin.com/in/adammulrich/
 
   navbar:
     background: primary
@@ -25,18 +25,18 @@ website:
         file: projects.qmd
       - text: "My Resume"
         file: resume.qmd
-      - text: "Data Cleansing"
-        file: cleansing.qmd
-      - text: "Data Exploration"
-        file: exploration.qmd
-      - text: "Story Telling"
-        file: story_telling.qmd
-      - text: "Machine Learning"
-        file: ml.qmd
-      - text: "Full Stack"
-        file: full_stack.qmd
-      - text: "Competition"
-        file: competition.qmd
+      # - text: "Data Cleansing"
+      #   file: cleansing.qmd
+      # - text: "Data Exploration"
+      #   file: exploration.qmd
+      # - text: "Story Telling"
+      #   file: story_telling.qmd
+      # - text: "Machine Learning"
+      #   file: ml.qmd
+      # - text: "Full Stack"
+      #   file: full_stack.qmd
+      # - text: "Competition"
+      #   file: competition.qmd
       
   sidebar:
     - title: "DS 250 Projects"
@@ -46,19 +46,19 @@ website:
         - text: "DS250 Projects"
           file: projects.qmd
         - text: "---"
-        - text: "Project 1"
+        - text: "Project 1: What's in a name"
           file: Projects/project1.qmd
         - text: "---"
-        - text: "Project 2"
+        - text: "Project 2: Flight Delays"
           file: Projects/project2.qmd
         - text: "---"
-        - text: "Project 3"
+        - text: "Project 3: Baseball"
           file: Projects/project3.qmd
         - text: "---"
-        - text: "Project 4"
+        - text: "Project 4: ML Predictions - Year Home Built"
           file: Projects/project4.qmd
         - text: "---"
-        - text: "Project 5"
+        - text: "Project 5: ML Predictions - Star Wars Fan Survey"
           file: Projects/project5.qmd
         - text: "---"
         #continue the pattern if you need more links
@@ -73,6 +73,3 @@ format:
       #dark: [cosmo, theme-dark.scss]
     css: styles.css
     toc: true
-
-
-

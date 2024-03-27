@@ -1,324 +1,148 @@
 [
   {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
+    "objectID": "Templates/DS350_Template.html",
+    "href": "Templates/DS350_Template.html",
+    "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
+    "text": "TODO: Update with template from Paul\n\n\n\n\n Back to top"
   },
   {
     "objectID": "story_telling.html",
     "href": "story_telling.html",
     "title": "about me",
     "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "story_telling.html#title-2-header",
-    "href": "story_telling.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project3.html",
-    "href": "Projects/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#elevator-pitch",
-    "href": "Projects/project3.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-1",
-    "href": "Projects/project3.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-2",
-    "href": "Projects/project3.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-3",
-    "href": "Projects/project3.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project1.html",
-    "href": "Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#elevator-pitch",
-    "href": "Projects/project1.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-1",
-    "href": "Projects/project1.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-2",
-    "href": "Projects/project1.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-3",
-    "href": "Projects/project1.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project4.html",
-    "href": "Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Projects/project4.html#elevator-pitch",
-    "href": "Projects/project4.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project4.html#questiontask-1",
-    "href": "Projects/project4.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project4.html#questiontask-2",
-    "href": "Projects/project4.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project4.html#questiontask-3",
-    "href": "Projects/project4.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Physicist, Mathematician, Cambridge professor.\n\nisaac@applesdofall.org | My wikipedia page\n\n\n\nStanding on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples.\n\n\n\n\n1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow\n\n\n\n\n2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France\n\n\n\n\n\n\n1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001\n\n\n\n\n1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
-  },
-  {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "Standing on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow"
-  },
-  {
-    "objectID": "resume.html#awards",
-    "href": "resume.html#awards",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France"
-  },
-  {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
-  },
-  {
-    "objectID": "resume.html#occupation",
-    "href": "resume.html#occupation",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
-  },
-  {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "cleansing.html",
-    "href": "cleansing.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "cleansing.html#title-2-header",
-    "href": "cleansing.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project5.html",
-    "href": "Projects/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Projects/project5.html#elevator-pitch",
-    "href": "Projects/project5.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project5.html#questiontask-1",
-    "href": "Projects/project5.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project5.html#questiontask-2",
-    "href": "Projects/project5.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project5.html#questiontask-3",
-    "href": "Projects/project5.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project2.html",
-    "href": "Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#elevator-pitch",
-    "href": "Projects/project2.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-1",
-    "href": "Projects/project2.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-2",
-    "href": "Projects/project2.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-3",
-    "href": "Projects/project2.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n\n                                                \nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table \n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
+    "text": "Back to top"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "DS250 Projects",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5"
+    "text": "DS250 Projects\n\nProject 1: What’s in a Name\nProject 2: Flight Delays\nProject 3: Baseball\nProject 4: ML Model Predictions: Year Built for Home Data\nProject 5: Star Wars\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "DS250 Projects"
+    ]
   },
   {
-    "objectID": "projects.html#repo-for-all-my-projects",
-    "href": "projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
+    "objectID": "Projects/project4.html",
+    "href": "Projects/project4.html",
+    "title": "Client Report - Home Built Date Prediction Using ML Model, Project 4",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5"
+    "text": "In this project, we explore the training of an ML model to predict if a home was built pre-1980 based on the other columns. Datasets can be dirty or missing data, and pre-1980 homes may have asbestos. The goal is to provide a trained model that can predict with an accuracy of at least 90% whether a home was built pre/post 1980 based on the other data.\n\n\nread data clean data\ndf = pd.read_csv(\"dwellings_denver.csv\")\n\n#clean up dirty data\ndf['condition'].replace(\"AVG\",'average', inplace=True)\ndf['floorlvl'].replace(np.nan,0,inplace=True)\ndf['gartype'].replace(np.nan,\"None\", inplace=True)\ndf['pre-1980']=df['yrbuilt'] &lt; 1980",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4: ML Predictions - Year Home Built"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#elevator-pitch",
+    "href": "Projects/project4.html#elevator-pitch",
+    "title": "Client Report - Home Built Date Prediction Using ML Model, Project 4",
+    "section": "",
+    "text": "In this project, we explore the training of an ML model to predict if a home was built pre-1980 based on the other columns. Datasets can be dirty or missing data, and pre-1980 homes may have asbestos. The goal is to provide a trained model that can predict with an accuracy of at least 90% whether a home was built pre/post 1980 based on the other data.\n\n\nread data clean data\ndf = pd.read_csv(\"dwellings_denver.csv\")\n\n#clean up dirty data\ndf['condition'].replace(\"AVG\",'average', inplace=True)\ndf['floorlvl'].replace(np.nan,0,inplace=True)\ndf['gartype'].replace(np.nan,\"None\", inplace=True)\ndf['pre-1980']=df['yrbuilt'] &lt; 1980",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4: ML Predictions - Year Home Built"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#question-1-relationship-charts",
+    "href": "Projects/project4.html#question-1-relationship-charts",
+    "title": "Client Report - Home Built Date Prediction Using ML Model, Project 4",
+    "section": "Question 1| Relationship Charts",
+    "text": "Question 1| Relationship Charts\nCreate 2-3 charts that evaluate potential relationships between the home variables and before1980. Explain what you learn from the charts that could help a machine learning algorithm.\n\n\nevaluate arcstyle\n#create dataframe for comparing neighborhood to year built\nnbhd_yb = df[['arcstyle','pre-1980']]\nnbhd_yb = nbhd_yb.sort_values('arcstyle')\nnbhd_yb['arcstyle'] = nbhd_yb['arcstyle'].astype('string')\n\n# show chart\nchart1 = px.histogram(nbhd_yb,\n                    x='arcstyle', \n                    color='pre-1980', \n                    title='Pre/Post 1980 Homes per Architecture Style',\n                    labels={'arcstyle':'Architecture Style'}\n                    )\nchart1.show()\n\n\n                                                \n\n\n\n\nThe chart above shows a reasonable correlation between architecture style and year built. Blue bars represent total home count in each style prior to 1980, the stacked red bar above the blue is for after 1980. Clearly most homes prior to 1980 were one-story. However other datapoints are quite split (end unit, middle unit), making this data somewhat useful, but not a great predictor of year built.\n\n\nevaluate nbhd\nnbhd_yb = df[['nbhd','pre-1980']]\nnbhd_yb = nbhd_yb.sort_values('nbhd')\nnbhd_yb['nbhd'] = nbhd_yb['nbhd'].astype('string')\n\n# show chart\nchart2 = px.histogram(nbhd_yb,\n                    x='nbhd', \n                    color='pre-1980', \n                    nbins=800, \n                    range_y=([0,700]), \n                    title='Pre/Post 1980 Homes per Neighborhood',\n                    labels={'nbhd':'Neighborhood Code' }\n                    )\nchart2.show()\n\n\n                                                \n\n\n\nThe chart above shows a strong correlation between neighborhood and year built. Blue bars represent total home count in each neighborhood prior to 1980, the stacked red bar above the blue is for after 1980. Not surprisingly, our bars tend to be mostly red or mostly blue as neighborhoods tend to be built generally during the same time period. This appears to be a very good predictor.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4: ML Predictions - Year Home Built"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#task-2-model-building",
+    "href": "Projects/project4.html#task-2-model-building",
+    "title": "Client Report - Home Built Date Prediction Using ML Model, Project 4",
+    "section": "Task 2| Model Building",
+    "text": "Task 2| Model Building\nBuild a classification model labeling houses as being built “before 1980” or “during or after 1980”. Your goal is to reach or exceed 90% accuracy. Explain your final model choice (algorithm, tuning parameters, etc) and describe what other models you tried.\n\n\n\n\n\n%% Flowchart Load to Score\nflowchart LR\n  A[Load Data] --&gt; B(Clean Data)\n  B --&gt; C(Encode Categorical Data)\n  C --&gt; D(Classify/Select Columns )\n  D --&gt; E(Split Data for train/test)\n  E --&gt; F(Training Data)\n  F --&gt; G(Train Model)\n  E --&gt; H(Testing Data)\n  G --&gt; I(Test Model)\n  H --&gt; I(Test Model)\n  I --&gt; J(Score Model)\n\n\n\n\n\n\n\n\nread and format data\n#define columns we will use for training and testing, x and y\ncolumns =['nbhd', 'quality', 'stories', 'gartype', 'numbaths', 'arcstyle']\ncolumns_to_encode =['quality', 'gartype', 'arcstyle']\n\nx = df[columns]\ny = df['pre-1980'] \n\n# encode columns\nx_encoded = x\nfor c in columns_to_encode:\n    x_encoded = encode_column(x_encoded,c)\n\n#create the model\nmodel = DecisionTreeClassifier()\n\nmodel.fit(x_encoded,y)\n\n#identify important features\nselected_model = SelectFromModel(model, prefit=True)\nx_encoded_selected = selected_model.transform(x_encoded)\n\n# create model for the selected set\nmodel_selected_by_model = DecisionTreeClassifier()\nmodel_selected_by_model.fit(x_encoded_selected,y)\n\n# create empty lists for returned accuracy, precision and feature pct\n\n# 6 columns\nresults_accuracy_6columns = []\nresults_precision_6columns = []\nresults_feature_pct_6columns = []\n\n# selected by model\nresults_accuracy_selected_by_model = []\nresults_precision_selected_by_model = []\nresults_feature_pct_selected_by_model = []\n\n# run the test n times, store the data against the selected model and encoded model.\nresult_count = 25\nrow_count = int(math.sqrt(result_count))\n\nmodel_list = [[model, [\n                results_accuracy_6columns, \n                results_precision_6columns, \n                results_feature_pct_6columns], \n                x_encoded\n            ],\n            [model_selected_by_model, [\n                results_accuracy_selected_by_model,\n                results_precision_selected_by_model,\n                results_feature_pct_selected_by_model],\n                x_encoded_selected\n            ]\n            ]\n\nwhile len(results_accuracy_6columns) &lt; result_count:\n\n    \n\n    for m, datasets, column_list in model_list:\n\n        #split the data\n        x_train, x_test, y_train, y_test = train_test_split(column_list,y)\n\n        # run the fit and score\n        accuracy_result, precision_result, feature_result = train_test_model(m,\n                    x_train,\n                    x_test,\n                    y_train,\n                    y_test)\n    \n        # append results\n        datasets[0].append(accuracy_result)\n        datasets[1].append(precision_result)\n        datasets[2].append(feature_result)\n\n\n\n# test accuracy\nx_train, x_test, y_train, y_test = train_test_split(x_encoded,y)\n\n\nBased on analysis of individual column score results (I ran evaluations against each column’s scoring accuracy, and then I retained all columns that were greater than 10%), the columns initial columns selected were:\n['nbhd', 'quality', 'stories', 'gartype', 'numbaths', 'arcstyle']\nData cleaning was applied to floorlvl and gartype to deal with NaNs. Because we have categorical data in the dataset, I then ran the dataframe through an encoder to translate to numeric values, which increased the column count from 6 to 313.\nHowever, I was unhappy with OneHotEncoder creating new columns, and renaming existing columns, so I built my own encoder function that identified the unique values in a column, and translated it to numerical data.\n_The data set was then run through the FeatureSelection.SelectFromModel algorithm, which reduced the columns from 6 down to just 2.\nAfter trying the linear, random forest, and Gaussian Naive Bayes regressors, I realized that a better solution was using a classifier instead. The Linear Classifier provided about 70% accurate, GaussianNB was 80%, but quite slow. Random Forest was also slower. I ended up settling on the Decision Tree Classifier.\nThe data was then split into training and test segments using the train\\_test\\_split method.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4: ML Predictions - Year Home Built"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#task-3-model-justification",
+    "href": "Projects/project4.html#task-3-model-justification",
+    "title": "Client Report - Home Built Date Prediction Using ML Model, Project 4",
+    "section": "Task 3| Model Justification",
+    "text": "Task 3| Model Justification\nJustify your classification model by discussing the most important features selected by your model. This discussion should include a chart and a description of the features.\n\nFeature Importance Data\n\n\njustify model\n# create a dataset for features\nfeatures = pd.DataFrame(results_feature_pct_6columns)\nfeatures.loc['mean'] = features.mean()\nfeatures.columns = list(x_encoded.columns)\n\n# display feature data\nfeatures.style \n\n\n\n\n\n\n\n\n \nnbhd\nquality\nstories\ngartype\nnumbaths\narcstyle\n\n\n\n\n0\n0.524580\n0.147061\n0.013081\n0.052031\n0.037525\n0.225722\n\n\n1\n0.356995\n0.127047\n0.016371\n0.131393\n0.037405\n0.330790\n\n\n2\n0.524630\n0.142930\n0.013178\n0.052944\n0.038547\n0.227771\n\n\n3\n0.519047\n0.146276\n0.013034\n0.055645\n0.038375\n0.227624\n\n\n4\n0.361555\n0.128821\n0.014946\n0.131891\n0.033633\n0.329155\n\n\n5\n0.355327\n0.127612\n0.013817\n0.135561\n0.034422\n0.333262\n\n\n6\n0.523129\n0.141831\n0.016744\n0.054241\n0.034991\n0.229064\n\n\n7\n0.347166\n0.128701\n0.015927\n0.133916\n0.037258\n0.337032\n\n\n8\n0.523413\n0.215003\n0.010945\n0.055124\n0.036903\n0.158613\n\n\n9\n0.525791\n0.148442\n0.012762\n0.053813\n0.036775\n0.222417\n\n\n10\n0.355068\n0.126053\n0.016659\n0.129254\n0.035412\n0.337554\n\n\n11\n0.359598\n0.130114\n0.012742\n0.130155\n0.037680\n0.329712\n\n\n12\n0.520875\n0.214977\n0.013533\n0.054804\n0.034991\n0.160819\n\n\n13\n0.519614\n0.145921\n0.013241\n0.057347\n0.036845\n0.227032\n\n\n14\n0.352074\n0.132812\n0.014894\n0.127125\n0.035762\n0.337332\n\n\n15\n0.352180\n0.128158\n0.014275\n0.130585\n0.037190\n0.337612\n\n\n16\n0.355946\n0.126033\n0.014557\n0.132102\n0.037848\n0.333513\n\n\n17\n0.519342\n0.140063\n0.012135\n0.050580\n0.043914\n0.233965\n\n\n18\n0.526798\n0.141141\n0.011159\n0.053532\n0.037984\n0.229386\n\n\n19\n0.524568\n0.149085\n0.010592\n0.052945\n0.034459\n0.228351\n\n\n20\n0.355431\n0.129162\n0.015759\n0.129282\n0.035405\n0.334962\n\n\n21\n0.519533\n0.145776\n0.012060\n0.053958\n0.038348\n0.230325\n\n\n22\n0.516706\n0.150320\n0.012492\n0.053679\n0.038983\n0.227820\n\n\n23\n0.524377\n0.146631\n0.011047\n0.052958\n0.036936\n0.228051\n\n\n24\n0.359425\n0.126692\n0.017096\n0.132548\n0.034310\n0.329928\n\n\nmean\n0.448927\n0.143466\n0.013722\n0.087896\n0.036876\n0.269112\n\n\n\n\n\n\n\n\nFeature Importance Summary\nTo reduce variance between training runs with unique data sets, I ran 25 unique data set splits and generate feature data, we see that neighborhood and architecture style are well above the other feature importance values. Quality and garage type are also reasonbly important.\n\n\njustify model\n# create dataframe for showing pie chart\nfeatures_means = features.mean()\n\nfeatures_pie = pd.DataFrame(zip(list(x_encoded.columns),list(features_means)))\nfeatures_pie.columns = [\"feature\", 'percentage']\n\n# show pie chart\nfeature_chart = px.pie(features_pie,values='percentage', names = 'feature')\nfeature_chart.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4: ML Predictions - Year Home Built"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#task-4-model-quality",
+    "href": "Projects/project4.html#task-4-model-quality",
+    "title": "Client Report - Home Built Date Prediction Using ML Model, Project 4",
+    "section": "Task 4| Model Quality",
+    "text": "Task 4| Model Quality\nDescribe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.\n\nAccuracy Scoring Data for Model Selection Columns\n\n\nstatistical summary for selected columns\n# create a dataframe from the result for both the 6 column and selected columns\nresults_df = pd.DataFrame(results_accuracy_6columns)\nresults_df.columns = ['score']\n\nresults_df_selected = pd.DataFrame(results_accuracy_selected_by_model)\nresults_df_selected.columns = ['score']\n\n# reshape the datapoints for a grid display \ndf_grid = pd.DataFrame(results_df.to_numpy().reshape(row_count,row_count))\ndf_grid_selected = pd.DataFrame(results_df_selected.to_numpy().reshape(row_count,row_count))\n\n# create Title\n\n# set color\ncm = sns.light_palette(\"blue\", as_cmap=True)\n\n#show table\ndf_grid_selected.style \\\n    .hide(axis='columns') \\\n    .format(precision=3) \\\n    .background_gradient(cmap=cm) \\\n    .set_table_styles([{\n        'selector': 'caption',\n        'props': [\n            ('color', 'blue'),\n            ('font-size', '25px')\n        ]\n    }])\n\n\n\n\n\n\n\n\n0\n0.913\n0.914\n0.912\n0.914\n0.919\n\n\n1\n0.918\n0.918\n0.912\n0.919\n0.913\n\n\n2\n0.915\n0.917\n0.915\n0.914\n0.918\n\n\n3\n0.921\n0.910\n0.916\n0.915\n0.913\n\n\n4\n0.917\n0.917\n0.911\n0.916\n0.913\n\n\n\n\n\n\n\n\nAccuracy Scoring Data for 6 Columns\n\n\nstatistical summary for 6 columns\n# create Title\n\n# set color\ncm = sns.light_palette(\"blue\", as_cmap=True)\n\n#show table\ndf_grid.style \\\n    .hide(axis='columns') \\\n    .format(precision=3) \\\n    .background_gradient(cmap=cm) \\\n    .set_table_styles([{\n        'selector': 'caption',\n        'props': [\n            ('color', 'blue'),\n            ('font-size', '25px')\n        ]\n    }])\n\n\n\n\n\n\n\n\n0\n0.950\n0.949\n0.949\n0.951\n0.953\n\n\n1\n0.948\n0.950\n0.944\n0.952\n0.945\n\n\n2\n0.945\n0.947\n0.951\n0.951\n0.946\n\n\n3\n0.949\n0.947\n0.951\n0.950\n0.947\n\n\n4\n0.947\n0.948\n0.946\n0.951\n0.943\n\n\n\n\n\n\n\n\nAccuracy Summary Analysis\n\n\nstatistical summary 2\n# describe the statistical data, and transpose for display\ndescribed_data = results_df.describe().transpose()[['count','mean','std','min','max']]\ndescribed_data = described_data.rename(columns={'std':'standard deviation'})\n\ndescribed_selected_data = results_df_selected.describe().transpose()[['count','mean','std','min','max']]\ndescribed_selected_data = described_selected_data.rename(columns={'std':'standard deviation'})\n\n# create statistical data for use in narrative\nmean = round(float(described_data['mean'].to_string().split()[1]),3)\nstandard_deviation = round(float(described_data['standard deviation'].to_string().split()[1]),3)\nmin_value = round(float(described_data['min'].to_string().split()[1]),3)\nmax_value = round(float(described_data['max'].to_string().split()[1]),3)\nmean_selected = round(float(described_selected_data['mean'].to_string().split()[1]),3)\n\n\n\n# show chart\ndescribed_data.style.format({\"count\" : \"{:,.0f}\",\n                 \"mean\" : \"{:.3f}\",\n                 \"standard deviation\" : \"{:.3f}\",\n                 \"min\" : \"{:.3f}\",\n                 \"max\" : \"{:.3f}\"\n                 }) \\\n            .set_table_styles([{\n                'selector': 'caption',\n                'props': [\n                    ('color', 'blue'),\n                    ('font-size', '25px')\n                ]\n            }])\n\n\n\n\n\n\n\n\n \ncount\nmean\nstandard deviation\nmin\nmax\n\n\n\n\nscore\n25\n0.948\n0.003\n0.943\n0.953\n\n\n\n\n\n\n\nI ran the train_test_split method, the fit method and finally score method against this column set 25 times to get a statistically significant data set. The first data set is from using just two columns as selected by the SelectFromModel selecter. The second is from using the 6 columns I had originally used.\nThe accuracy results came back on the 2 column data set at 0.915 . Comparing the results to my initial 6 column data set, the data shows that using 6 columns instead of 2 columns increases to 0.948.\nIn addition, the standard deviation across our samples was tiny at 0.003. Min and Max across our data was 0.943 and 0.953, respectively.\n_The resulting model will successfully determine pre 1980 homes with a mean accuracy rate of 0.948. The 95% confidence interval would be (0.942, 0.954).\nAccuracy is calculated as follows:\n\\[\\begin{align}\nAccuracy& = {R_c \\over T_t }\\\\\nwhere\\\\\nR_c& = Correct Responses\\\\\nT_t& = Total Test Cases\\\\\n\\end{align}\\]\n\n\nPrecision Scoring Data for 6 Columns\n\n\nprecision statistical summary for 6 columns\n# create a dataframe from the result for both the 6 column and selected columns\nresults_df = pd.DataFrame(results_precision_6columns)\nresults_df.columns = ['score']\n\n# reshape the datapoints for a grid display \ndf_grid = pd.DataFrame(results_df.to_numpy().reshape(row_count,row_count))\n\n\n#show table\ndf_grid.style \\\n    .hide(axis='columns') \\\n    .format(precision=3) \\\n    .background_gradient(cmap=cm) \\\n    .set_table_styles([{\n        'selector': 'caption',\n        'props': [\n            ('color', 'blue'),\n            ('font-size', '25px')\n        ]\n    }])\n\n\n\n\n\n\n\n\n0\n0.965\n0.965\n0.970\n0.964\n0.964\n\n\n1\n0.963\n0.965\n0.964\n0.968\n0.960\n\n\n2\n0.956\n0.962\n0.965\n0.966\n0.962\n\n\n3\n0.964\n0.958\n0.962\n0.965\n0.959\n\n\n4\n0.965\n0.963\n0.963\n0.964\n0.965\n\n\n\n\n\n\n\n\nPrecision Summary Analysis\n\n\nprecision statistical summary 2\n# describe the statistical data, and transpose for display\ndescribed_data = results_df.describe().transpose()[['count','mean','std','min','max']]\ndescribed_data = described_data.rename(columns={'std':'standard deviation'})\n\ndescribed_selected_data = results_df_selected.describe().transpose()[['count','mean','std','min','max']]\ndescribed_selected_data = described_selected_data.rename(columns={'std':'standard deviation'})\n\n# create statistical data for use in narrative\nmean = round(float(described_data['mean'].to_string().split()[1]),3)\nstandard_deviation = round(float(described_data['standard deviation'].to_string().split()[1]),3)\nmin_value = round(float(described_data['min'].to_string().split()[1]),3)\nmax_value = round(float(described_data['max'].to_string().split()[1]),3)\nmean_selected = round(float(described_selected_data['mean'].to_string().split()[1]),3)\n\n# show chart\ndescribed_data.style.format({\"count\" : \"{:,.0f}\",\n                 \"mean\" : \"{:.3f}\",\n                 \"standard deviation\" : \"{:.3f}\",\n                 \"min\" : \"{:.3f}\",\n                 \"max\" : \"{:.3f}\"\n                 }) \\\n            .set_table_styles([{\n                'selector': 'caption',\n                'props': [\n                    ('color', 'blue'),\n                    ('font-size', '25px')\n                ]\n            }])\n\n\n\n\n\n\n\n\n \ncount\nmean\nstandard deviation\nmin\nmax\n\n\n\n\nscore\n25\n0.963\n0.003\n0.956\n0.970\n\n\n\n\n\n\nThe precision results came back on the 6 column data set at 0.963. Precision is calculated as below. Precision is useful as an indicator to ensure that we are not missing a significant numbers of false_positives. Our precision data here is excellent, even better than our accuracy.\n\\[\\begin{align}\nPrecision& = {P_t \\over {P_t + P_f} }\\\\\nwhere\\\\\nP_t& = True Positives\\\\\nP_f& = False Positives\\\\\n\\end{align}\\]",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4: ML Predictions - Year Home Built"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html",
+    "href": "Projects/project2.html",
+    "title": "Client Report - Late Flights",
+    "section": "",
+    "text": "This is an exploration of FAA data that tracks late flights. After cleaning the missing and incorrect data (using lookups, inferrence, and mean where appropriate), we evaluate the airports to avoid, the months that have the fewest flight delays, and we calculate, tabulate and visualize total weather delays across all airports.\n\n\nShow the code\n# load json file\ndf = pd.read_json(\"flights_missing.json\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2: Flight Delays"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#elevator-pitch",
+    "href": "Projects/project2.html#elevator-pitch",
+    "title": "Client Report - Late Flights",
+    "section": "",
+    "text": "This is an exploration of FAA data that tracks late flights. After cleaning the missing and incorrect data (using lookups, inferrence, and mean where appropriate), we evaluate the airports to avoid, the months that have the fewest flight delays, and we calculate, tabulate and visualize total weather delays across all airports.\n\n\nShow the code\n# load json file\ndf = pd.read_json(\"flights_missing.json\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2: Flight Delays"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#task-1---fix-data",
+    "href": "Projects/project2.html#task-1---fix-data",
+    "title": "Client Report - Late Flights",
+    "section": "TASK 1 - Fix data",
+    "text": "TASK 1 - Fix data\nFix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”). In your report include one record example (one row) from your new data, in the raw JSON format. Your example should display the “NaN” for at least one missing value.\n\nBy importing the data using read_json, the parser automatically replaced missing values with NaN.\n‘1500+’ was found and replaced with 1500 in the carrier delays column.\nMissing airport names were updated to match the airport code.\nThe late_aircraft column had bad data in the form of -999. This was replaced with the mean from the column.\nMisspelled February was fixed.\nThe airport name was split to a city and name column.\n\nHere’s an example row with missing data in the minutes_delayed_carrier column in json format.\n\n\nShow the code\n# we need to removed the '1500+'' values because they cannot be summed. We don't know how high it is, \n# so we can only make the value 1500\ndf.replace(\"1500+\",1500, inplace=True)\n\n# there are string values in this column, so we are fixing them to be integers.\ndf[\"num_of_delays_carrier\"] = df[\"num_of_delays_carrier\"].apply(int)\n\n# airport name is missing from some data\n#\n# generate a dataset with the correct values\nnames_codes = df[['airport_code','airport_name']].query(\"airport_name != ''\").drop_duplicates('airport_code')\n#\n# map correct values onto the airport name\ndf['airport_name']=df['airport_code'].map(names_codes.set_index(['airport_code'])['airport_name'])\n\n# split city and airport name\ndf[[\"city\",\"airport_name\"]]=df['airport_name'].str.split(\":\", expand=True)\n\n# there are negative values in the late aircraft column, replace with the mean\n#\n# calculate the mean\nlate_aircraft_mean = df.query(\"num_of_delays_late_aircraft != -999\")[\"num_of_delays_late_aircraft\"].mean()\n#\n# replace -999 with the mean \ndf[\"month\"] = df[\"month\"].replace('Febuary','February')\n\n# fix spelling of february\ndf[\"num_of_delays_late_aircraft\"] = df[\"num_of_delays_late_aircraft\"].replace(-999,late_aircraft_mean)\n\n# fix month columns\ndf['prior_code'] = df['airport_code'].shift()\ndf['prior_month'] = df['month'].shift()\ndf['next_month'] = df['month'].shift(-1)\ndf['month'] = df.apply(lambda x: x['prior_month'] if x['month'] == 'n/a' and (x['prior_code'] &gt; x['airport_code']) else x['next_month'], axis=1)\n\n# df = df.drop('prior_code', axis='columns')\n\ndf.style\n\n# print out at least one row with NA\nprint(df[df.isna().any(axis=1)].head(1).to_json())\n\n\n{\"airport_code\":{\"0\":\"ATL\"},\"airport_name\":{\"0\":\" Hartsfield-Jackson Atlanta International\"},\"month\":{\"0\":\"January\"},\"year\":{\"0\":2005.0},\"num_of_flights_total\":{\"0\":35048},\"num_of_delays_carrier\":{\"0\":1500},\"num_of_delays_late_aircraft\":{\"0\":1109.1040723982},\"num_of_delays_nas\":{\"0\":4598},\"num_of_delays_security\":{\"0\":10},\"num_of_delays_weather\":{\"0\":448},\"num_of_delays_total\":{\"0\":8355},\"minutes_delayed_carrier\":{\"0\":116423.0},\"minutes_delayed_late_aircraft\":{\"0\":104415},\"minutes_delayed_nas\":{\"0\":207467.0},\"minutes_delayed_security\":{\"0\":297},\"minutes_delayed_weather\":{\"0\":36931},\"minutes_delayed_total\":{\"0\":465533},\"city\":{\"0\":\"Atlanta, GA\"},\"prior_code\":{\"0\":null},\"prior_month\":{\"0\":null},\"next_month\":{\"0\":\"January\"}}",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2: Flight Delays"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#question-2---airport-with-worst-delays",
+    "href": "Projects/project2.html#question-2---airport-with-worst-delays",
+    "title": "Client Report - Late Flights",
+    "section": "QUESTION 2 - Airport with worst delays?",
+    "text": "QUESTION 2 - Airport with worst delays?\nWhich airport has the worst delays? Discuss the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours.\nTo determine which airport has the worst delays, I calculated a delay index, which is based on the combination of percentage of flights delayed, and the average delay time. Using this calculation, San Francisco leads our 7 airports with a 0.27 index, edging out Chicago (0.26). Chicago has a slightly worse record when flights are delayed (they average 1.13 hours vs. San Francisco’s 1.03 hours), but San Francisco has a much higher (26% vs 23%) delayed flight rate, giving San Francisco the worse track record, and a place you might want to avoid traveling through.\n\n\nShow the code\n# group by code and name, and sum the numeric columns\nby_airport = df.groupby([\"airport_code\",\"airport_name\"], as_index=False).agg(\n                          {'num_of_delays_total': \"sum\",\n                          'num_of_flights_total': \"sum\",\n                          'minutes_delayed_total': \"sum\"\n                        })\n\n# calculate % flights delayed\nby_airport[\"pct_flights_delayed\"] = by_airport[\"num_of_delays_total\"]/by_airport[\"num_of_flights_total\"] \n\n# calculate average delay time\nby_airport[\"avg_hours_per_flight_delay\"] = (by_airport[\"minutes_delayed_total\"]/60)/by_airport[\"num_of_delays_total\"]\n\n# calculate delay index\nby_airport[\"delay_index\"] = by_airport[\"avg_hours_per_flight_delay\"] * by_airport[\"pct_flights_delayed\"]\n\n# get just the columns we want.\nby_airport_filtered = by_airport[['airport_code', 'airport_name','num_of_flights_total','num_of_delays_total','pct_flights_delayed','avg_hours_per_flight_delay', 'delay_index']]\n\n# sort the data by index\nby_airport_filtered.sort_values('delay_index',inplace=True,ascending=False)\n\n#apply better column names\nby_airport_filtered.rename(columns={\n    'num_of_flights_total': 'Total Flights', \n    'airport_code':'Code', \n    'airport_name': 'Name', \n    'num_of_delays_total':'Total Delays', \n    'pct_flights_delayed':'Delayed (%)', \n    'avg_hours_per_flight_delay':'Average Delay (Hrs)',\n    'delay_index': 'Delay Index', \n     }, inplace=True)\n\n# set table formats and display table\nby_airport_filtered.style.format({\n  'Delayed (%)':'{:.1%}',\n  'Total Flights': '{:,}',\n  'Total Delays': '{:,}',\n  'Average Delay (Hrs)':'{:.2}',\n  'Delay Index': '{:.3}'},\n  ).hide(axis='index')\n\n\n\n\n\n\n\n\nCode\nName\nTotal Flights\nTotal Delays\nDelayed (%)\nAverage Delay (Hrs)\nDelay Index\n\n\n\n\nSFO\nSan Francisco International\n1,630,945\n425,604\n26.1%\n1.0\n0.271\n\n\nORD\nChicago O'Hare International\n3,597,588\n830,825\n23.1%\n1.1\n0.261\n\n\nATL\nHartsfield-Jackson Atlanta International\n4,430,047\n902,443\n20.4%\n1.0\n0.203\n\n\nIAD\nWashington Dulles International\n851,571\n168,467\n19.8%\n1.0\n0.201\n\n\nDEN\nDenver International\n2,513,974\n468,519\n18.6%\n0.9\n0.167\n\n\nSAN\nSan Diego International\n917,862\n175,132\n19.1%\n0.79\n0.15\n\n\nSLC\nSalt Lake City International\n1,403,384\n205,160\n14.6%\n0.82\n0.12",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2: Flight Delays"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#question-3---best-month-to-fly",
+    "href": "Projects/project2.html#question-3---best-month-to-fly",
+    "title": "Client Report - Late Flights",
+    "section": "QUESTION 3 - Best month to fly?",
+    "text": "QUESTION 3 - Best month to fly?\nWhat is the best month to fly if you want to avoid delays of any length? Discuss the metric you chose and why you chose it to calculate your answer. Include one chart to help support your answer, with the x-axis ordered by month. (To answer this question, you will need to remove any rows that are missing the Month variable.)\nSeptember is the best month to fly to avoid delays. Suprisingly it is marginally better than November with all the Thanksgiving holiday travel. December is defintely the month to avoid. I chose to calculate the percentage of flights that were delayed as my metric, which uses delayed flights divided by total flights.\n\n\nShow the code\n# select columns of interest, remove n/a months\n#by_month = df[['month','num_of_flights_total','num_of_delays_total']].query('month != \"n/a\"')\nby_month = df[['month','num_of_flights_total','num_of_delays_total']]\n\n# aggregate\nby_month = by_month.groupby(by=[\"month\"], as_index=False).agg({'num_of_flights_total': \"sum\",'num_of_delays_total': \"sum\"})\n\n# calculate delay percentage\nby_month['Delayed Flights (%)'] = by_month['num_of_delays_total'] /  by_month['num_of_flights_total']\n\n# sort by pct\nby_month.sort_values('Delayed Flights (%)',inplace=True)\n\n# create bar chart\nmonth_bar = px.bar(by_month, x='month', y='Delayed Flights (%)', \n                   title='Percentage of Delayed Flights Per Month from 7 Major US Airports 2005-2015')\nmonth_bar.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2: Flight Delays"
+    ]
   },
   {
     "objectID": "ml.html",
@@ -349,17 +173,320 @@
     "text": "MarkDown Basics"
   },
   {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
+  },
+  {
+    "objectID": "cleansing.html",
+    "href": "cleansing.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "cleansing.html#title-2-header",
+    "href": "cleansing.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about Adam",
+    "section": "",
+    "text": "I love puzzle competitions, like these: Microsoft Puzzles.\nI came in 3rd place in a company wide Windows Solitaire competition amongst Microsoft employees.\nI’ve been playing chess since I was 8. My favorite openings are the Dutch Defense and Bird’s.\nI’ve been playing fantasy sports since pre-internet. In fact, I got my first job at Microsoft through the skills I learned (VB and Access) to build my own fantasy sports software.\nAtari-ST enthusiast! Sundog and Dungeon Master and the sequel Chaos Strikes Back were the best.\nI have over 1000 CDs of primarily 70’s and 80’s classic rock.\nI have over 1200 DVD’s (ripped to a raid array of course - KODI is the best!)\nI am a big sports fan. Washington Huskies, Seattle Seahawks, and Seattle Mariners. I hope the Sonics return soon. I haven’t watched the NBA since they left.\nI have 6 3d printers in the house. Primarily to help my son run DuoDocks.\n\n\n\n\n\nI’m the father of 6 adult children (ages 20-35).\nI’ve been married for 37 years.\nI am a member of the Church of Jesus Christ of Latter-day Saints.\nMy kids think I listen to Yacht Rock way too much.\nMy kids are talented singer/songwriter/multi-instrumentalists.\nI totally live vicariously through their gifts.\n\nJackson’s Orange Album\nBirthday Concert\nGarrison’s 4EFB\n\n\n\n\n\n\nI’ve lived in 55+ homes in my life.\nI attended 18 schools prior to High School graduation.\nI’ve resided in 17 states.\nNo, I won’t name them for you.\nOK, I will: CA, WA, OR, AZ, ID, CO, MO, IA, AR, PA, GA, NC, SC, NY, NJ, ME, VA\nI haven’t moved in 24 years.\nNo my dad wasn’t moving us do to being in the military.\nBut my dad was in the Air Force - before I was born.\nBetween my first software work in my early 20’s and my start at Microsoft in my early 30’s, I spent 10 years as a Nuclear Health Physics Technician working at nuclear power generating stations and Dept of Energy sites. I can talk for hours about nuclear power if you ask.\n\n\n\n\n\nI first learned to write code on a DEC pdp-11/32 mini.\nMy first home computer was an Atari 800, and I saved my programs to a cassette tape. And it took forever to write.\nMy first hard drive was 10MB for my Atari 1040ST, and was the size of a shoebox. And it cost $1000. And it was awesome.\nI think you can learn everything about procedural coding basics in 9 weeks. Declaration, Assignment, Computation, Looping, Branching, Conditional Evaluation. That’s it.\nI think that Object Oriented programming is a big jump from procedural programming, and takes a bit longer. But it is soooo worth it!\nI am an avid Microsoft Surface Duo fan.\nEcco the Dolphin was the greatest Sega Genesis game of all time."
+  },
+  {
+    "objectID": "index.html#hobbies",
+    "href": "index.html#hobbies",
+    "title": "about Adam",
+    "section": "",
+    "text": "I love puzzle competitions, like these: Microsoft Puzzles.\nI came in 3rd place in a company wide Windows Solitaire competition amongst Microsoft employees.\nI’ve been playing chess since I was 8. My favorite openings are the Dutch Defense and Bird’s.\nI’ve been playing fantasy sports since pre-internet. In fact, I got my first job at Microsoft through the skills I learned (VB and Access) to build my own fantasy sports software.\nAtari-ST enthusiast! Sundog and Dungeon Master and the sequel Chaos Strikes Back were the best.\nI have over 1000 CDs of primarily 70’s and 80’s classic rock.\nI have over 1200 DVD’s (ripped to a raid array of course - KODI is the best!)\nI am a big sports fan. Washington Huskies, Seattle Seahawks, and Seattle Mariners. I hope the Sonics return soon. I haven’t watched the NBA since they left.\nI have 6 3d printers in the house. Primarily to help my son run DuoDocks."
+  },
+  {
+    "objectID": "index.html#family",
+    "href": "index.html#family",
+    "title": "about Adam",
+    "section": "",
+    "text": "I’m the father of 6 adult children (ages 20-35).\nI’ve been married for 37 years.\nI am a member of the Church of Jesus Christ of Latter-day Saints.\nMy kids think I listen to Yacht Rock way too much.\nMy kids are talented singer/songwriter/multi-instrumentalists.\nI totally live vicariously through their gifts.\n\nJackson’s Orange Album\nBirthday Concert\nGarrison’s 4EFB"
+  },
+  {
+    "objectID": "index.html#random",
+    "href": "index.html#random",
+    "title": "about Adam",
+    "section": "",
+    "text": "I’ve lived in 55+ homes in my life.\nI attended 18 schools prior to High School graduation.\nI’ve resided in 17 states.\nNo, I won’t name them for you.\nOK, I will: CA, WA, OR, AZ, ID, CO, MO, IA, AR, PA, GA, NC, SC, NY, NJ, ME, VA\nI haven’t moved in 24 years.\nNo my dad wasn’t moving us do to being in the military.\nBut my dad was in the Air Force - before I was born.\nBetween my first software work in my early 20’s and my start at Microsoft in my early 30’s, I spent 10 years as a Nuclear Health Physics Technician working at nuclear power generating stations and Dept of Energy sites. I can talk for hours about nuclear power if you ask."
+  },
+  {
+    "objectID": "index.html#computers",
+    "href": "index.html#computers",
+    "title": "about Adam",
+    "section": "",
+    "text": "I first learned to write code on a DEC pdp-11/32 mini.\nMy first home computer was an Atari 800, and I saved my programs to a cassette tape. And it took forever to write.\nMy first hard drive was 10MB for my Atari 1040ST, and was the size of a shoebox. And it cost $1000. And it was awesome.\nI think you can learn everything about procedural coding basics in 9 weeks. Declaration, Assignment, Computation, Looping, Branching, Conditional Evaluation. That’s it.\nI think that Object Oriented programming is a big jump from procedural programming, and takes a bit longer. But it is soooo worth it!\nI am an avid Microsoft Surface Duo fan.\nEcco the Dolphin was the greatest Sega Genesis game of all time."
+  },
+  {
+    "objectID": "Projects/project1.html",
+    "href": "Projects/project1.html",
+    "title": "Client Report - What’s in a name?",
+    "section": "",
+    "text": "This is an exploration of a name frequency dataset from the United States from 1910 to 2015. I explore the usage of the names Adam and Brittany, as well as traditional Christian Names Mary, Martha, Peter and Paul. Finally, we look at a couple movies with names in the title, and try to see their impact on names.\n\n\nRead and format project data\n# Include and execute your code here\ndf_names = pd.read_csv(\"names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1: What's in a name"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#elevator-pitch",
+    "href": "Projects/project1.html#elevator-pitch",
+    "title": "Client Report - What’s in a name?",
+    "section": "",
+    "text": "This is an exploration of a name frequency dataset from the United States from 1910 to 2015. I explore the usage of the names Adam and Brittany, as well as traditional Christian Names Mary, Martha, Peter and Paul. Finally, we look at a couple movies with names in the title, and try to see their impact on names.\n\n\nRead and format project data\n# Include and execute your code here\ndf_names = pd.read_csv(\"names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1: What's in a name"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#question-1---how-does-your-name-at-your-birth-year-compare-to-its-use-historically",
+    "href": "Projects/project1.html#question-1---how-does-your-name-at-your-birth-year-compare-to-its-use-historically",
+    "title": "Client Report - What’s in a name?",
+    "section": "Question 1 - How does your name at your birth year compare to its use historically?",
+    "text": "Question 1 - How does your name at your birth year compare to its use historically?\nThe year 1965 for the name ‘Adam’ was quite an average year, ranking 49th of 106 years, in the 46th percentile. It occurred 2255 times in 1965, just 11.8% of the peak in 1983 at 19099 occurances. The 70’s brought a surge in popularity, with the peak in 1983.\n\n\nshow relative frequency of the name Adam by year\n# filter dataset to just the name 'Adam' and to just the columns we need\ndf_adam = df_names[['name','year','Total']].query(expr='name == \"Adam\"')\n\n# add a column so that we can color the correct bar\ndf_adam[\"highlight\"] = df_adam['year'] == 1965\n\n# create chart by year\nadam_chart_year = px.line(df_adam,\n                    x='year',\n                    y='Total',\n                    color='highlight',\n                    markers=True,\n                    title='The total occurrences of the name Adam by year.'\n                    )\n\n# don't show legend\nadam_chart_year.update_layout(showlegend=False)\n\n\n                                                \n\n\nRed marker denotes my birth year 1965.\n\n\nshow relative frequency of the name Adam by rank and percentile\n# create second chart by rank\n\n# order data by total descending\ndf_adam = df_adam.sort_values(by=['Total'], ascending=False)\n\n#add rank and percentile columns\ndf_adam.insert(0,'rank',range(1,1+len(df_adam)))\ndf_adam.insert(0,'percentile',df_adam['rank']/len(df_adam))\n\n# create chart by rank\nadam_chart_total = px.bar(df_adam,\n                    x='rank',\n                    y='Total',\n                    color='highlight',\n                    custom_data=['year','Total','rank', 'percentile'],\n                    title='The total occurrences of the name Adam by rank.',\n                    \n                    )\n\n# don't show legend\nadam_chart_total.update_layout(showlegend=False)\n\n# add a custom hover template\nadam_chart_total.update_traces(\n    hovertemplate=\"&lt;br&gt;\".join([\n        \"year: %{customdata[0]}\",\n        \"total: %{customdata[1]}\",\n        \"rank: %{customdata[2]}\",\n        \"percentile: %{customdata[3]:.2f}\",\n    ])\n)\n\nadam_chart_total.show()\n\n\n                                                \n\n\nRed marker denotes my birth year 1965.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1: What's in a name"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#question-2---if-you-talked-to-someone-named-brittany-on-the-phone-what-is-your-guess-of-his-or-her-age-what-ages-would-you-not-guess",
+    "href": "Projects/project1.html#question-2---if-you-talked-to-someone-named-brittany-on-the-phone-what-is-your-guess-of-his-or-her-age-what-ages-would-you-not-guess",
+    "title": "Client Report - What’s in a name?",
+    "section": "Question 2 - If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?",
+    "text": "Question 2 - If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nBased on the 1988 to 1992 peak period of the various spellings of the name Brittany, I would guess that they were between the ages of 32 and 36. I would not guess younger than 25, or older than 40.\n\n\nshow Brittany name data\n# create Brittany dataframe, filter to needed columns and to variations on the name\nexp = 'name in [\"Brittney\", \"Britany\", \"Brittany\", \"Britney\", \"Britani\", \"Brittny\", \"Britanni\"]'\ndf_brittany = df_names[['name','year','Total']].query(expr=exp)\n\n# create stacked bar chart by year\nbrittany_chart_year = px.bar(df_brittany,\n                    x='year',\n                    y='Total',\n                    color='name',\n                    title='The total occurrences of varying spellings of the name Brittany by year.'\n                    )\n\nbrittany_chart_year.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1: What's in a name"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#question-3---mary-martha-peter-and-paul-are-all-christian-names.-from-1920---2000-compare-the-name-usage-of-each-of-the-four-names.-what-trends-do-you-notice",
+    "href": "Projects/project1.html#question-3---mary-martha-peter-and-paul-are-all-christian-names.-from-1920---2000-compare-the-name-usage-of-each-of-the-four-names.-what-trends-do-you-notice",
+    "title": "Client Report - What’s in a name?",
+    "section": "Question 3 - Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?",
+    "text": "Question 3 - Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\nEach name’s usage peaked between 1947 and 1956. Since the mid 1970’s, use has fallen off dramatically. And in relative comparison, up until the mid 1960’s, Mary was at least as twice as popular as the other names; in some cases, 5 times more popular. Since the mid 1960’s, Mary and Paul have had about the same popularity.\n\n\nshow data on Mary, Martha, Peter and Paul\n# create query\nexp = 'name in [\"Mary\", \"Martha\", \"Peter\", \"Paul\"] and year &gt;= 1920 and year &lt;= 2000'\ndf_christian_names = df_names[['name','year','Total']].query(expr=exp)\n\n# create stacked bar chart by year\nchristian_names_chart_year = px.line(df_christian_names,\n                    x='year',\n                    y='Total',\n                    color='name',\n                    title='The total occurrences of Mary, Martha, Peter and Paul from the years 1920 to 2000.'\n                    )\n\nchristian_names_chart_year.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1: What's in a name"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#question-4---think-of-a-unique-name-from-a-famous-movie.-plot-the-usage-of-that-name-and-see-how-changes-line-up-with-the-movie-release.-does-it-look-like-the-movie-had-an-effect-on-usage",
+    "href": "Projects/project1.html#question-4---think-of-a-unique-name-from-a-famous-movie.-plot-the-usage-of-that-name-and-see-how-changes-line-up-with-the-movie-release.-does-it-look-like-the-movie-had-an-effect-on-usage",
+    "title": "Client Report - What’s in a name?",
+    "section": "Question 4 - Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?",
+    "text": "Question 4 - Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nI selected 2 datapoints. In 1950, Bette Davis and Anne Baxter starred in All About Eve. Immediately, the name Eve jumped in popularity to double. Over the next decade, and 5 times it’s pre 1950 usage.\nThe second datapoint I selected was 1994 Forrest Gump, another Oscar winning movie. Interestingly, the name Forrest began to increase around the time the novel was published that the movie is based on in 1986. However, the book was not well received, and is unlikely to have been the source of the increase in usage. Forrest did have a massive peak in 1994 coinciding with the movie.\n\n\nmovie name impact\nexp = 'name == \"Eve\"'\ndf_movie_name = df_names[['name','year','Total']].query(expr=exp)\n\n# add a column so that we can color the correct bar\ndf_movie_name[\"highlight\"] = df_movie_name['year'] == 1950 \n\n\n# create chart by rank\nmovie_chart_total = px.bar(df_movie_name,\n                    x='year',\n                    y='Total',\n                    color='highlight',\n                    title='The total occurrences of the name \"Eve\" by year.'\n                   \n                    )\n\nmovie_chart_total.update_layout(showlegend=False)\nmovie_chart_total.show()\n\n\n                                                \n\n\nRed bar denotes the release year of the movie All About Eve (1950).\n\n\nselecting the name Eve from the dataset, filtering the records.\n# Forrest Gump\nexp = 'name == \"Forrest\"'\ndf_movie_name = df_names[['name','year','Total']].query(expr=exp)\n\n# add a column so that we can color the correct bar\ndf_movie_name[\"highlight\"] = ((df_movie_name['year'] == 1994) | (df_movie_name['year'] == 1986))\n# create chart by rank\nmovie_chart_total_2 = px.bar(df_movie_name,\n                    x='year',\n                    y='Total',\n                    color='highlight',\n                    title='The total occurrences of the name \"Forrest\" by year.'\n                    \n                    )\n\n# show chart\nmovie_chart_total_2.update_layout(showlegend=False)\nmovie_chart_total_2.show()\n\n\n                                                \n\n\nRed bars denote the release year of the movie Forrest Gump(1994), and the book Forrest Gump (1986).",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1: What's in a name"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html",
+    "href": "Projects/project3.html",
+    "title": "Client Report - Project 3 - Finding Relationships in Baseball",
+    "section": "",
+    "text": "This is an exploration of Sean Lahman’s baseball database. We look at players who attended BYU-I, at batting averages across individual years as well as across career, and we compare the number of wins per dollar spent for the Seattle Mariners against the Los Angeles Dodgers.\n\n\nset up imports\n# set up imports\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\nimport sqlite3\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\n# create connection to db\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sqlite3.connect(sqlite_file)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3: Baseball"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#elevator-pitch",
+    "href": "Projects/project3.html#elevator-pitch",
+    "title": "Client Report - Project 3 - Finding Relationships in Baseball",
+    "section": "",
+    "text": "This is an exploration of Sean Lahman’s baseball database. We look at players who attended BYU-I, at batting averages across individual years as well as across career, and we compare the number of wins per dollar spent for the Seattle Mariners against the Los Angeles Dodgers.\n\n\nset up imports\n# set up imports\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\nimport sqlite3\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\n# create connection to db\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sqlite3.connect(sqlite_file)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3: Baseball"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#task-1---byu-idaho-baseball-players",
+    "href": "Projects/project3.html#task-1---byu-idaho-baseball-players",
+    "title": "Client Report - Project 3 - Finding Relationships in Baseball",
+    "section": "Task 1 - BYU-Idaho baseball players",
+    "text": "Task 1 - BYU-Idaho baseball players\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\n::: {#cell-Task 1 .cell execution_count=2}\n\ncreate a df for players that attended byu-i\n# load data\nquery = \"\"\"\nSelect DISTINCT p.playerID, c.schoolID, s.salary, s.yearID, s.teamID\nfrom people p \nleft join salaries s \n    on p.playerID = s.PlayerID \njoin collegeplaying c \n    on p.playerID = c.playerID \nwhere c.schoolID = 'idbyuid'\norder by salary DESC\n\"\"\"\nresults = pd.read_sql_query(query,con)\n\n# show data\nresults\n\n\n\n\n\n\n\n\n\n\nplayerID\nschoolID\nsalary\nyearID\nteamID\n\n\n\n\n0\nlindsma01\nidbyuid\n4000000.0\n2014.0\nCHA\n\n\n1\nlindsma01\nidbyuid\n3600000.0\n2012.0\nBAL\n\n\n2\nlindsma01\nidbyuid\n2800000.0\n2011.0\nCOL\n\n\n3\nlindsma01\nidbyuid\n2300000.0\n2013.0\nCHA\n\n\n4\nlindsma01\nidbyuid\n1625000.0\n2010.0\nHOU\n\n\n5\nstephga01\nidbyuid\n1025000.0\n2001.0\nSLN\n\n\n6\nstephga01\nidbyuid\n900000.0\n2002.0\nSLN\n\n\n7\nstephga01\nidbyuid\n800000.0\n2003.0\nSLN\n\n\n8\nstephga01\nidbyuid\n550000.0\n2000.0\nSLN\n\n\n9\nlindsma01\nidbyuid\n410000.0\n2009.0\nFLO\n\n\n10\nlindsma01\nidbyuid\n395000.0\n2008.0\nFLO\n\n\n11\nlindsma01\nidbyuid\n380000.0\n2007.0\nFLO\n\n\n12\nstephga01\nidbyuid\n215000.0\n1999.0\nSLN\n\n\n13\nstephga01\nidbyuid\n185000.0\n1998.0\nPHI\n\n\n14\nstephga01\nidbyuid\n150000.0\n1997.0\nPHI\n\n\n15\ncatetr01\nidbyuid\nNaN\nNaN\nNone\n\n\n\n\n\n\n\n:::\n3 people from BYU-Idaho played MLB. Troy Cate is of note, and appears to have had one at bat, so he likely had a minor league contract. Minor leaguers get paid a prorated amount of league minimum for the days they are active and on the roster, regardless of playing time, games appeared in, or number of games during the time they were on the roster. The prorated amount is somewhere between 1/180 and 1/190 of league minimum per day, depending on the length of the season.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3: Baseball"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#task-2---batting-average-queries",
+    "href": "Projects/project3.html#task-2---batting-average-queries",
+    "title": "Client Report - Project 3 - Finding Relationships in Baseball",
+    "section": "Task 2 - Batting Average Queries",
+    "text": "Task 2 - Batting Average Queries\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\na. Write an SQL query that provides playerID, yearID, and batting average for players with at least 1 at bat that year. Sort the table from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.\n::: {#cell-Task 2a .cell execution_count=3}\n\nhighest single year averages alphabetical top 5\n# load data\nquery = \"\"\"\nSelect playerID, yearid as year, H as Hits, AB as 'At_Bats' from batting where AB &gt;= 1\n\"\"\"\nresults = pd.read_sql_query(query,con)\n\n# calculate average\nresults['Batting_Average'] = results['Hits']/results['At_Bats']\n\n# sort data\nresults.sort_values(by=[\"Batting_Average\",\"playerID\"], ascending=[False,True], inplace=True)\n\ntotal_perfect = results.query(\"Batting_Average == 1\").playerID.count()\n\nprint(f\"Total with a perfect batting average: {total_perfect}\")\n\n# show data\nresults.head(5).style.format({\n  'Batting_Average':'{:.3f}'},\n  ).hide(axis='index')\n\n\nTotal with a perfect batting average: 480\n\n\n\n\n\n\n\n\nplayerID\nyear\nHits\nAt_Bats\nBatting_Average\n\n\n\n\naberal01\n1957\n1\n1\n1.000\n\n\nabernte02\n1960\n1\n1\n1.000\n\n\nabramge01\n1923\n1\n1\n1.000\n\n\nacklefr01\n1964\n1\n1\n1.000\n\n\nalanirj01\n2019\n1\n1\n1.000\n\n\n\n\n\n:::\nUnsurprisingly there have been many people that have had a single at bat and have a perfect 1.000 batting average. In fact, it has happened 480 times in this data set.\nb. Use the same query as above, but only include players with at least 10 at bats that year. Print the top 5 results.\n::: {#cell-Task 2b .cell execution_count=4}\n\nhighest single year averages AB &gt;= 10 alphabetical top 5\n# load the data\nquery = \"\"\"\nSelect playerID, yearid as year, H as Hits, AB as 'At_Bats' from batting where AB &gt;= 10\n\"\"\"\nresults = pd.read_sql_query(query,con)\n\n# calculate average\nresults['Batting_Average'] = results['Hits']/results['At_Bats']\n\n# sort data\nresults.sort_values(by=[\"Batting_Average\",\"playerID\"], ascending=[False,True], inplace=True)\n\n# show data\nresults.head(5).style.format({\n  'Batting_Average':'{:.3f}'},\n  ).hide(axis='index')\n\n\n\n\n\n\n\n\nplayerID\nyear\nHits\nAt_Bats\nBatting_Average\n\n\n\n\nnymanny01\n1974\n9\n14\n0.643\n\n\ncarsoma01\n2013\n7\n11\n0.636\n\n\naltizda01\n1910\n6\n10\n0.600\n\n\njohnsde01\n1975\n6\n10\n0.600\n\n\nsilvech01\n1948\n8\n14\n0.571\n\n\n\n\n\n:::\nIncreasing the minimum at bats to 10 quickly gets us away from perfect batting averages. It is not uncommon for a player to hit exceptionally well for a short period of time, but the law of averages tends to catch up to them, and they tend to revert closer to the mean. In this case, .643 has been the ceiling for 10 at-bats over a season.\nCertainly, hitters have had higher batting averages over short periods. Last year, Julio Rodriguez had a 4 game stretch where he went 17 for 22 (.773) from Aug 16 to Aug 19. If a player was having this much success over a 10 at bat period, either they got hurt or they were a late season call up, because they would have likely been given more playing time due to the short term success.\nc. Now calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats, and print the top 5 results.\n::: {#cell-Task 2c .cell execution_count=5}\n\nhighest lifetime batting averages &gt;= 100 abs\n#load the data\nquery = \"\"\"\nSelect playerID, SUM(H) as total_hits, SUM(AB) as total_at_bats\nfrom batting \ngroup by playerID \nhaving SUM(AB) &gt;= 100\n\"\"\"\nresults = pd.read_sql_query(query,con)\n\n# create the average column\nresults['lifetime_average'] = results['total_hits']/results['total_at_bats']\n\n# sort the data\nresults.sort_values(by=[\"lifetime_average\",\"playerID\"], ascending=[False,True], inplace=True)\n\n# show the data\nresults.head(5).style.format({\n  'lifetime_average':'{:.3f}'},\n  ).hide(axis='index')\n\n\n\n\n\n\n\n\nplayerID\ntotal_hits\ntotal_at_bats\nlifetime_average\n\n\n\n\ncobbty01\n4189\n11436\n0.366\n\n\nbarnero01\n860\n2391\n0.360\n\n\nhornsro01\n2930\n8173\n0.358\n\n\njacksjo01\n1772\n4981\n0.356\n\n\nmeyerle01\n513\n1443\n0.356\n\n\n\n\n\n:::\nUnsurprisingly, Ty Cobb, Roger Hornsby, and Shoeless Joe Jackson were in the top 5 all time batting average leaders. What is surprising is that the database includes the National Association from 1871 to 1875, which played by slightly different rules, until they National Association became the National League in 1876. 2 players from that National Association era were standouts with the bat: Ross Barnes and Levi Meyerle.\nBarnes was 3x NA/NL batting champion from 1872-1876, and led the league in hits, run, doubles, triples and stolen bases mutliple times. He leveraged a cast iron home plate and the ability to hit the ball off the plate and cause it to bounce foul. Rules during that period were that the ball was in play (today if the ball goes foul before it reaches 1st base or 3rd base, it is a foul ball). In 1877, the rules were changed and this was no longer a fair ball. In addition, he was quite ill in 1877, and played only 22 games. Whether the rule change or his illness was the larger impact, Barnes never hit .300 in his remaining career.\nThe reason that Ross Barnes did not win the NA batting championship in 1871 was Levi Meyerle hit an incredible .492 for the season, eclipsing Barnes .401 average. Meyerle was not great defensively, but he hit below .300 only once in his 7 year career.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3: Baseball"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#task-3---compare-two-teams-success-vs-cost",
+    "href": "Projects/project3.html#task-3---compare-two-teams-success-vs-cost",
+    "title": "Client Report - Project 3 - Finding Relationships in Baseball",
+    "section": "Task 3 - Compare two teams success vs cost",
+    "text": "Task 3 - Compare two teams success vs cost\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Plotly Express to visualize the comparison. What do you learn?\n\n\nRead data and display scatter plot\nquery = \"\"\"\nselect s.teamID as team, s.yearID as year, SUM(salary) as total_salary, t.W as wins\nfrom salaries s\njoin teams t on s.teamID = t.teamID and s.yearid = t.yearID\ngroup by s.yearID, s.teamID\nhaving s.yearid &gt;= 2007 and s.teamID in ('SEA','LAN')\norder by team\n\"\"\"\n\n# get data from db\nresults = pd.read_sql_query(query,con)\n\n# calculate dollars per win\nresults['Dollars Per Win'] = results['total_salary']/results['wins']\n\n# create go plot to combine subplots\nfig = make_subplots(specs=[[{\"secondary_y\": True}]], x_title=\"Year\")\n\n# go unfortunately isn't as useful at handling multiple columns, so you have to break the data apart.\nresults_sea = results.query(\"team == 'SEA'\")\nresults_lan = results.query(\"team == 'LAN'\")\n\n# add the bar charts\nfig.add_trace(go.Bar(x=results_sea.year, y=results_sea.wins, name='Mariners Wins', marker_color=\"RGBA(0, 128, 128, .4)\", yaxis=\"y2\",), secondary_y=False)\nfig.add_trace(go.Bar(x=results_lan.year, y=results_lan.wins, name='Dodgers Wins', marker_color='RGBA(0,0,255,.6)', yaxis=\"y2\",), secondary_y=False)\nfig.update_layout(barmode='group')\nfig.update_yaxes(title_text=\"Total Wins\", secondary_y=False)\n\n# add the line charts\nfig.add_trace(go.Line(x=results_sea.year, y=results_sea.total_salary, yaxis=\"y\", name=\"Mariners Payroll\", marker_color=\"teal\",line=dict(width=5)), secondary_y=True) \nfig.add_trace(go.Line(x=results_lan.year, y=results_lan.total_salary, yaxis=\"y\", name=\"Dodgers Payroll\",marker_color=\"blue\", line=dict(width=5)), secondary_y=True)\nfig.update_yaxes(title_text=\"Total Payroll\", secondary_y=True)\n\n# show the combined chart\nfig.update_layout(title='Wins and Total Payroll: Mariners vs Dodgers (2007-2016)')\n\nfig.show()\n\n#create the dollars per win chart.\ndollars_per_win_chart = px.line(results,x='year', y='Dollars Per Win', color='team', \n                                title=\"Dollars spent per win: Mariners vs Dodgers (2007-2016)\", \n                                color_discrete_map={\n                                \"LAN\": \"blue\",\n                                \"SEA\": \"teal\"} ,\n                                render_mode=\"webg1\")\n\n# change legend labels\nnewnames = {\"SEA\": \"Mariners $/win\", \"LAN\": \"Dodgers $/win\"}\ndollars_per_win_chart.for_each_trace(lambda t: t.update(name = newnames[t.name]))\n\n#add annotation\ndollars_per_win_chart.add_annotation(x=2012,y=1100000,\n  text='2012: Dodgers Purchased by Guggenheim Baseball Management',  bgcolor='RGBA(0,0,255,.2)',ay=-250, ax=-150,\n  arrowsize=1,arrowhead=1, arrowcolor='RGBA(0,0,255,.2)',arrowwidth=2,\n  standoff=15\n  )\n\n\n#change line width and show\ndollars_per_win_chart.update_traces(line={'width':5})\ndollars_per_win_chart.show()\n\n\n                                                \n\n\n                                                \n\n\nI chose the Seattle Mariners and the Los Angeles Dodgers. Generally speaking, minor to middle increases in payroll did not have a direct correlation with increased win totals. The only excecption to this is when the Dodgers doubled their payroll between 2012 and 2013, and this doubled payroll sustained 5 to 8 additional wins per yer. Since 2013, the Mariners have spent $0.8M to $1.2M less per win.\nThe obvious question is, why did the Dodgers change the amount they were spending in 2012. The Dodgers were purchased in 2012 and the new management had a completely different approach to payroll. They have continued the higher level of investment do this date. The increase has allowed the Dodgers to reach the playoffs in 11 straight seasons, and have won 50 playoff games during that time.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3: Baseball"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html",
+    "href": "Projects/project5.html",
+    "title": "Client Report - Star Wars and household income",
+    "section": "",
+    "text": "This is an exploration of the Star Wars data set. We clean and prepare the data to be put into an ML model to predict income above $50k/year, we demonstrate which columns are most useful for that prediction, and we demonstrate that the data is still the same by producing charts.\n\n\nRead and format project data\ndf = pd.read_csv(\"StarWars.csv\", header=[0,1])\ndf. columns = df.columns.map('_'.join)\n\ncolor_map = [[0, \"#b2ced8\"], [0.000001, \"#90b5c1\"], [0.999999, \"#73a5b4\"], [1, \"#35869f\"]]\ntable_style = [{\"selector\":\"tbody tr:nth-child(odd)\",\"props\":[(\"background-color\",\"#dee7eb\")]}]\n\n# function for encoding a column string --&gt; int\ndef encode_column(df: pd.DataFrame, column, new_column_name, drop_column):\n    \n    # get the list of all unique values\n    unique_values = df[column].unique()\n    mapped_dict = {}\n    # iterate the values and update to a numeric value\n    counter = 0\n    for u in unique_values:\n        mapped_dict[u] = counter\n        counter += 1\n    \n    df[new_column_name] = df[column].map(mapped_dict).fillna(df[column])\n\n    if drop_column:\n      df = df.drop(column,axis=1)\n\n    return df\n\n# train and test helper function\ndef train_test_model(model,x_train,x_test,y_train,y_test):\n    \n    #fit the model\n    model.fit(x_train,y_train.values.ravel())\n\n    # predict the score\n    y_predict = model.predict(x_test)\n\n    # generate accuracy result\n    accuracy_result = accuracy_score(y_test,y_predict)\n\n    return accuracy_result, model.feature_importances_, \n\n# create a grid display \ndef create_grid_from_data(results_set,row_count,name):\n    # create a dataframe from the result for both the 6 column and selected columns\n    results_df = pd.DataFrame(results_set)\n    results_df.columns = ['score']\n\n    # reshape the datapoints for a grid display \n    df_grid = pd.DataFrame(results_df.to_numpy().reshape(row_count,row_count))\n\n    # set color\n    cm = sns.light_palette(\"#257d98\", as_cmap=True)\n\n    #show table\n\n    return (df_grid.style \\\n        .hide(axis='columns') \\\n        .format(precision=3) \\\n        .background_gradient(cmap=cm) \\\n        .set_table_styles([{\n            'selector': 'caption',\n            'props': [\n                ('color', 'blue'),\n                ('font-size', '25px')\n            ]\n        }]))",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5: ML Predictions - Star Wars Fan Survey"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html#elevator-pitch",
+    "href": "Projects/project5.html#elevator-pitch",
+    "title": "Client Report - Star Wars and household income",
+    "section": "",
+    "text": "This is an exploration of the Star Wars data set. We clean and prepare the data to be put into an ML model to predict income above $50k/year, we demonstrate which columns are most useful for that prediction, and we demonstrate that the data is still the same by producing charts.\n\n\nRead and format project data\ndf = pd.read_csv(\"StarWars.csv\", header=[0,1])\ndf. columns = df.columns.map('_'.join)\n\ncolor_map = [[0, \"#b2ced8\"], [0.000001, \"#90b5c1\"], [0.999999, \"#73a5b4\"], [1, \"#35869f\"]]\ntable_style = [{\"selector\":\"tbody tr:nth-child(odd)\",\"props\":[(\"background-color\",\"#dee7eb\")]}]\n\n# function for encoding a column string --&gt; int\ndef encode_column(df: pd.DataFrame, column, new_column_name, drop_column):\n    \n    # get the list of all unique values\n    unique_values = df[column].unique()\n    mapped_dict = {}\n    # iterate the values and update to a numeric value\n    counter = 0\n    for u in unique_values:\n        mapped_dict[u] = counter\n        counter += 1\n    \n    df[new_column_name] = df[column].map(mapped_dict).fillna(df[column])\n\n    if drop_column:\n      df = df.drop(column,axis=1)\n\n    return df\n\n# train and test helper function\ndef train_test_model(model,x_train,x_test,y_train,y_test):\n    \n    #fit the model\n    model.fit(x_train,y_train.values.ravel())\n\n    # predict the score\n    y_predict = model.predict(x_test)\n\n    # generate accuracy result\n    accuracy_result = accuracy_score(y_test,y_predict)\n\n    return accuracy_result, model.feature_importances_, \n\n# create a grid display \ndef create_grid_from_data(results_set,row_count,name):\n    # create a dataframe from the result for both the 6 column and selected columns\n    results_df = pd.DataFrame(results_set)\n    results_df.columns = ['score']\n\n    # reshape the datapoints for a grid display \n    df_grid = pd.DataFrame(results_df.to_numpy().reshape(row_count,row_count))\n\n    # set color\n    cm = sns.light_palette(\"#257d98\", as_cmap=True)\n\n    #show table\n\n    return (df_grid.style \\\n        .hide(axis='columns') \\\n        .format(precision=3) \\\n        .background_gradient(cmap=cm) \\\n        .set_table_styles([{\n            'selector': 'caption',\n            'props': [\n                ('color', 'blue'),\n                ('font-size', '25px')\n            ]\n        }]))",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5: ML Predictions - Star Wars Fan Survey"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html#task-1---clean-column-names",
+    "href": "Projects/project5.html#task-1---clean-column-names",
+    "title": "Client Report - Star Wars and household income",
+    "section": "Task 1 - clean column names",
+    "text": "Task 1 - clean column names\nShorten the column names and clean them up for easier use with pandas. Provide a table or list that exemplifies how you fixed the names.\n\n\nRename columns\n# new column names\nnew_column_names = ['respondent', 'seen_star_wars', 'star_wars_fan', 'seen_episode_i',\n  'seen_episode_ii', 'seen_episode_iii', 'seen_episode_iv', 'seen_episode_v', 'seen_episode_vi',\n  'ranked_film_1', 'ranked_film_2', 'ranked_film_3', 'ranked_film_4', 'ranked_film_5', 'ranked_film_6',\n  'han_solo', 'luke_skywalker', 'leia_organa', 'anakin_skywalker', 'obi_win_kenobi', 'emperor_palpatine',\n  'darth_vader', 'lando_calrissian', 'boba_fett', 'c_3po', 'r2_d2', 'jar_jar_binks', 'padme_amidala', 'yoda',\n  'who_shot_first', 'expanded_universe_familiarity', 'expanded_universe_fan', 'star_trek_fan',\n  'gender', 'age', 'household_income', 'education', 'location']\n\n# columns that are string and not going to be numeric    \nstring_columns = list(set(new_column_names + ['seen_one_film']) - \n                      set(['age','education','respondent','household_income']))\n\n# create a map\nrenamed_columns_dict = {df.columns[i]: new_column_names[i] for i in range(len(new_column_names))}\n\n# create dataframe for display\ncleaning_df = pd.DataFrame.from_dict(renamed_columns_dict,orient='index')\ncleaning_df.columns=[\"new_name\"]\n\n# rename columns\ndf = df.rename(columns=renamed_columns_dict)\n\n# show dataframe for renaming\ndisplay(df.head(5).style.set_table_styles(table_style))\nprint()\n\n\n\n\n\n\n\n\n \nrespondent\nseen_star_wars\nstar_wars_fan\nseen_episode_i\nseen_episode_ii\nseen_episode_iii\nseen_episode_iv\nseen_episode_v\nseen_episode_vi\nranked_film_1\nranked_film_2\nranked_film_3\nranked_film_4\nranked_film_5\nranked_film_6\nhan_solo\nluke_skywalker\nleia_organa\nanakin_skywalker\nobi_win_kenobi\nemperor_palpatine\ndarth_vader\nlando_calrissian\nboba_fett\nc_3po\nr2_d2\njar_jar_binks\npadme_amidala\nyoda\nwho_shot_first\nexpanded_universe_familiarity\nexpanded_universe_fan\nstar_trek_fan\ngender\nage\nhousehold_income\neducation\nlocation\n\n\n\n\n0\n3292879998\nYes\nYes\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\n3.000000\n2.000000\n1.000000\n4.000000\n5.000000\n6.000000\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nI don't understand this question\nYes\nNo\nNo\nMale\n18-29\nnan\nHigh school degree\nSouth Atlantic\n\n\n1\n3292879538\nNo\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nnan\nYes\nMale\n18-29\n$0 - $24,999\nBachelor degree\nWest South Central\n\n\n2\n3292765271\nYes\nNo\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nnan\nnan\nnan\n1.000000\n2.000000\n3.000000\n4.000000\n5.000000\n6.000000\nSomewhat favorably\nSomewhat favorably\nSomewhat favorably\nSomewhat favorably\nSomewhat favorably\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nUnfamiliar (N/A)\nI don't understand this question\nNo\nnan\nNo\nMale\n18-29\n$0 - $24,999\nHigh school degree\nWest North Central\n\n\n3\n3292763116\nYes\nYes\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\n5.000000\n6.000000\n1.000000\n2.000000\n4.000000\n3.000000\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nSomewhat favorably\nVery favorably\nSomewhat favorably\nSomewhat unfavorably\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nVery favorably\nI don't understand this question\nNo\nnan\nYes\nMale\n18-29\n$100,000 - $149,999\nSome college or Associate degree\nWest North Central\n\n\n4\n3292731220\nYes\nYes\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\n5.000000\n4.000000\n6.000000\n2.000000\n1.000000\n3.000000\nVery favorably\nSomewhat favorably\nSomewhat favorably\nSomewhat unfavorably\nVery favorably\nVery unfavorably\nSomewhat favorably\nNeither favorably nor unfavorably (neutral)\nVery favorably\nSomewhat favorably\nSomewhat favorably\nVery unfavorably\nSomewhat favorably\nSomewhat favorably\nGreedo\nYes\nNo\nNo\nMale\n18-29\n$100,000 - $149,999\nSome college or Associate degree\nWest North Central\n\n\n\n\n\n\n\n\n\nTask 1 summary: I combined the two row header into a single header, and then shortened the names to useful values.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5: ML Predictions - Star Wars Fan Survey"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html#task-2---clean-and-format-data",
+    "href": "Projects/project5.html#task-2---clean-and-format-data",
+    "title": "Client Report - Star Wars and household income",
+    "section": "Task 2 - clean and format data",
+    "text": "Task 2 - clean and format data\nClean and format the data so that it can be used in a machine learning model. As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made.\n\n\nclean and format data\n# Filter the dataset to respondents that have seen at least one film. \n# create column to filter on\ndf['seen_one_film'] = (df['seen_episode_i'].notnull() |\n                      df['seen_episode_ii'].notnull() |\n                      df['seen_episode_iii'].notnull() |\n                      df['seen_episode_iv'].notnull() |\n                      df['seen_episode_v'].notnull() |\n                      df['seen_episode_vi'].notnull() )\n\n# filter data set  \ndf_filtered = df[df.seen_one_film].copy()\n\n# create a new column that converts the age ranges to a single number. \n# drop the age range categorical column.\ndf_filtered['age'] = df_filtered['age'].astype(str)\ndf_filtered = df_filtered.fillna('None')\n\ndf_filtered = encode_column(df_filtered,'age', 'age_encoded',True)\n\n# create a new column that converts the education groupings to a single number. \n# drop the school categorical column. \ndf_filtered = encode_column(df_filtered,'education', 'education_encoded', True)\n\n#Create a new column that converts the income ranges to a single number. \nincome_map = {\n              '$0 - $24,999': 1, \n              '$25,000 - $49,999': 2, \n              '$50,000 - $99,999': 3, \n              '$100,000 - $149,999': 4, \n              '$150,000+': 5}\n\ndf_filtered['household_income'] = df_filtered['household_income'].map(income_map).fillna(0)\n\n# create your y column based on the new income range column.\ny = pd.DataFrame()\ny['household_income_target'] = (df_filtered['household_income'] &gt; 3)\n\n#Drop the income range categorical column.\ndf_filtered.drop('household_income',axis=1,inplace=True)\n\n#Drop the respondant ID\ndf_filtered.drop('respondent',axis=1,inplace=True)\n\n# set data types and fill na\ndf_filtered[string_columns].astype('string')\ndf[string_columns] = df_filtered[string_columns].fillna(\"None\")\n\n# clean all the NAs in the test dataset\ny.fillna(0, inplace= True)\n\n# filter to demographic columns\ndf_encoded = df_filtered.copy()\n\n#encoded all columns so that it is easier to compare features.\nfor c in string_columns:\n    df_encoded = encode_column(df_encoded,c,f\"{c}_encoded\",True)\n\ndisplay(df_encoded.head(5).style.set_table_styles(table_style).format(precision=0) )\nprint()\n\n# One-hot encode all remaining categorical columns.\none_hot_encoder = OneHotEncoder(handle_unknown='ignore')\nohe_array = one_hot_encoder.fit_transform(df_filtered.astype(str))\nonehotlabels = one_hot_encoder.transform(df_filtered.astype(str)).toarray()\n\n# put the array back in to a df for display\nnew_columns=[]\nfor col, values in zip(df_encoded.columns, one_hot_encoder.categories_):\n    new_columns.extend([col + '_' + str(value) for value in values])\n\nnew_df= pd.concat([df_encoded, pd.DataFrame(onehotlabels, columns=new_columns)], axis='columns')\n\n\n\n\n\n\n\n\n \nage_encoded\neducation_encoded\nranked_film_2_encoded\nranked_film_3_encoded\nranked_film_5_encoded\nanakin_skywalker_encoded\nseen_one_film_encoded\nexpanded_universe_familiarity_encoded\nranked_film_1_encoded\nr2_d2_encoded\ndarth_vader_encoded\njar_jar_binks_encoded\nseen_episode_iii_encoded\nleia_organa_encoded\nseen_star_wars_encoded\nboba_fett_encoded\ngender_encoded\nlocation_encoded\nobi_win_kenobi_encoded\nyoda_encoded\nseen_episode_v_encoded\nseen_episode_iv_encoded\nseen_episode_vi_encoded\nhan_solo_encoded\nluke_skywalker_encoded\nc_3po_encoded\nranked_film_4_encoded\npadme_amidala_encoded\nstar_trek_fan_encoded\nlando_calrissian_encoded\nexpanded_universe_fan_encoded\nseen_episode_i_encoded\nwho_shot_first_encoded\nranked_film_6_encoded\nseen_episode_ii_encoded\nemperor_palpatine_encoded\nstar_wars_fan_encoded\n\n\n\n\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n\n\n2\n0\n0\n0\n1\n0\n1\n0\n1\n1\n1\n1\n1\n0\n1\n0\n0\n0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n0\n1\n0\n0\n1\n0\n0\n0\n0\n1\n1\n\n\n3\n0\n1\n1\n0\n1\n0\n0\n1\n2\n0\n0\n0\n0\n0\n0\n1\n0\n1\n0\n0\n0\n0\n0\n0\n0\n0\n1\n0\n1\n1\n1\n0\n0\n1\n0\n2\n0\n\n\n4\n0\n1\n2\n2\n2\n2\n0\n0\n2\n2\n2\n2\n0\n1\n0\n2\n0\n1\n0\n2\n0\n0\n0\n0\n1\n2\n1\n2\n0\n2\n0\n0\n1\n1\n0\n3\n0\n\n\n5\n0\n2\n2\n1\n0\n0\n0\n0\n1\n2\n0\n3\n0\n0\n0\n3\n0\n2\n0\n0\n0\n0\n0\n0\n0\n2\n2\n3\n1\n2\n0\n0\n2\n2\n0\n4\n0\n\n\n\n\n\n\n\n\n\nThe dataset was filtered to people that had seen at least one star wars film. Then the age, household income were encoded with numerics, as were all other string columns. NA’s were replaced, and a household income target column was created in a separate dataset.\nI did run OneHotEncode to encode the data.\n\nOne Hot Encoded dataset\n\n\nShow the code\n# show the OneHotEncoded dataset\ndisplay(new_df.head(5).style.set_table_styles(table_style))\ndisplay()\nprint()\n\n\n\n\n\n\n\n\n \nage_encoded\neducation_encoded\nranked_film_2_encoded\nranked_film_3_encoded\nranked_film_5_encoded\nanakin_skywalker_encoded\nseen_one_film_encoded\nexpanded_universe_familiarity_encoded\nranked_film_1_encoded\nr2_d2_encoded\ndarth_vader_encoded\njar_jar_binks_encoded\nseen_episode_iii_encoded\nleia_organa_encoded\nseen_star_wars_encoded\nboba_fett_encoded\ngender_encoded\nlocation_encoded\nobi_win_kenobi_encoded\nyoda_encoded\nseen_episode_v_encoded\nseen_episode_iv_encoded\nseen_episode_vi_encoded\nhan_solo_encoded\nluke_skywalker_encoded\nc_3po_encoded\nranked_film_4_encoded\npadme_amidala_encoded\nstar_trek_fan_encoded\nlando_calrissian_encoded\nexpanded_universe_fan_encoded\nseen_episode_i_encoded\nwho_shot_first_encoded\nranked_film_6_encoded\nseen_episode_ii_encoded\nemperor_palpatine_encoded\nstar_wars_fan_encoded\nage_encoded_Yes\neducation_encoded_No\neducation_encoded_Yes\nranked_film_2_encoded_None\nranked_film_2_encoded_Star Wars: Episode I The Phantom Menace\nranked_film_3_encoded_None\nranked_film_3_encoded_Star Wars: Episode II Attack of the Clones\nranked_film_5_encoded_None\nranked_film_5_encoded_Star Wars: Episode III Revenge of the Sith\nanakin_skywalker_encoded_None\nanakin_skywalker_encoded_Star Wars: Episode IV A New Hope\nseen_one_film_encoded_None\nseen_one_film_encoded_Star Wars: Episode V The Empire Strikes Back\nexpanded_universe_familiarity_encoded_None\nexpanded_universe_familiarity_encoded_Star Wars: Episode VI Return of the Jedi\nranked_film_1_encoded_1.0\nranked_film_1_encoded_2.0\nranked_film_1_encoded_3.0\nranked_film_1_encoded_4.0\nranked_film_1_encoded_5.0\nranked_film_1_encoded_6.0\nranked_film_1_encoded_None\nr2_d2_encoded_1.0\nr2_d2_encoded_2.0\nr2_d2_encoded_3.0\nr2_d2_encoded_4.0\nr2_d2_encoded_5.0\nr2_d2_encoded_6.0\ndarth_vader_encoded_1.0\ndarth_vader_encoded_2.0\ndarth_vader_encoded_3.0\ndarth_vader_encoded_4.0\ndarth_vader_encoded_5.0\ndarth_vader_encoded_6.0\ndarth_vader_encoded_None\njar_jar_binks_encoded_1.0\njar_jar_binks_encoded_2.0\njar_jar_binks_encoded_3.0\njar_jar_binks_encoded_4.0\njar_jar_binks_encoded_5.0\njar_jar_binks_encoded_6.0\nseen_episode_iii_encoded_1.0\nseen_episode_iii_encoded_2.0\nseen_episode_iii_encoded_3.0\nseen_episode_iii_encoded_4.0\nseen_episode_iii_encoded_5.0\nseen_episode_iii_encoded_6.0\nleia_organa_encoded_1.0\nleia_organa_encoded_2.0\nleia_organa_encoded_3.0\nleia_organa_encoded_4.0\nleia_organa_encoded_5.0\nleia_organa_encoded_6.0\nseen_star_wars_encoded_Neither favorably nor unfavorably (neutral)\nseen_star_wars_encoded_None\nseen_star_wars_encoded_Somewhat favorably\nseen_star_wars_encoded_Somewhat unfavorably\nseen_star_wars_encoded_Unfamiliar (N/A)\nseen_star_wars_encoded_Very favorably\nseen_star_wars_encoded_Very unfavorably\nboba_fett_encoded_Neither favorably nor unfavorably (neutral)\nboba_fett_encoded_None\nboba_fett_encoded_Somewhat favorably\nboba_fett_encoded_Somewhat unfavorably\nboba_fett_encoded_Unfamiliar (N/A)\nboba_fett_encoded_Very favorably\nboba_fett_encoded_Very unfavorably\ngender_encoded_Neither favorably nor unfavorably (neutral)\ngender_encoded_None\ngender_encoded_Somewhat favorably\ngender_encoded_Somewhat unfavorably\ngender_encoded_Unfamiliar (N/A)\ngender_encoded_Very favorably\ngender_encoded_Very unfavorably\nlocation_encoded_Neither favorably nor unfavorably (neutral)\nlocation_encoded_None\nlocation_encoded_Somewhat favorably\nlocation_encoded_Somewhat unfavorably\nlocation_encoded_Unfamiliar (N/A)\nlocation_encoded_Very favorably\nlocation_encoded_Very unfavorably\nobi_win_kenobi_encoded_Neither favorably nor unfavorably (neutral)\nobi_win_kenobi_encoded_None\nobi_win_kenobi_encoded_Somewhat favorably\nobi_win_kenobi_encoded_Somewhat unfavorably\nobi_win_kenobi_encoded_Unfamiliar (N/A)\nobi_win_kenobi_encoded_Very favorably\nobi_win_kenobi_encoded_Very unfavorably\nyoda_encoded_Neither favorably nor unfavorably (neutral)\nyoda_encoded_None\nyoda_encoded_Somewhat favorably\nyoda_encoded_Somewhat unfavorably\nyoda_encoded_Unfamiliar (N/A)\nyoda_encoded_Very favorably\nyoda_encoded_Very unfavorably\nseen_episode_v_encoded_Neither favorably nor unfavorably (neutral)\nseen_episode_v_encoded_None\nseen_episode_v_encoded_Somewhat favorably\nseen_episode_v_encoded_Somewhat unfavorably\nseen_episode_v_encoded_Unfamiliar (N/A)\nseen_episode_v_encoded_Very favorably\nseen_episode_v_encoded_Very unfavorably\nseen_episode_iv_encoded_Neither favorably nor unfavorably (neutral)\nseen_episode_iv_encoded_None\nseen_episode_iv_encoded_Somewhat favorably\nseen_episode_iv_encoded_Somewhat unfavorably\nseen_episode_iv_encoded_Unfamiliar (N/A)\nseen_episode_iv_encoded_Very favorably\nseen_episode_iv_encoded_Very unfavorably\nseen_episode_vi_encoded_Neither favorably nor unfavorably (neutral)\nseen_episode_vi_encoded_None\nseen_episode_vi_encoded_Somewhat favorably\nseen_episode_vi_encoded_Somewhat unfavorably\nseen_episode_vi_encoded_Unfamiliar (N/A)\nseen_episode_vi_encoded_Very favorably\nseen_episode_vi_encoded_Very unfavorably\nhan_solo_encoded_Neither favorably nor unfavorably (neutral)\nhan_solo_encoded_None\nhan_solo_encoded_Somewhat favorably\nhan_solo_encoded_Somewhat unfavorably\nhan_solo_encoded_Unfamiliar (N/A)\nhan_solo_encoded_Very favorably\nhan_solo_encoded_Very unfavorably\nluke_skywalker_encoded_Neither favorably nor unfavorably (neutral)\nluke_skywalker_encoded_None\nluke_skywalker_encoded_Somewhat favorably\nluke_skywalker_encoded_Somewhat unfavorably\nluke_skywalker_encoded_Unfamiliar (N/A)\nluke_skywalker_encoded_Very favorably\nluke_skywalker_encoded_Very unfavorably\nc_3po_encoded_Neither favorably nor unfavorably (neutral)\nc_3po_encoded_None\nc_3po_encoded_Somewhat favorably\nc_3po_encoded_Somewhat unfavorably\nc_3po_encoded_Unfamiliar (N/A)\nc_3po_encoded_Very favorably\nc_3po_encoded_Very unfavorably\nranked_film_4_encoded_Neither favorably nor unfavorably (neutral)\nranked_film_4_encoded_None\nranked_film_4_encoded_Somewhat favorably\nranked_film_4_encoded_Somewhat unfavorably\nranked_film_4_encoded_Unfamiliar (N/A)\nranked_film_4_encoded_Very favorably\nranked_film_4_encoded_Very unfavorably\npadme_amidala_encoded_Neither favorably nor unfavorably (neutral)\npadme_amidala_encoded_None\npadme_amidala_encoded_Somewhat favorably\npadme_amidala_encoded_Somewhat unfavorably\npadme_amidala_encoded_Unfamiliar (N/A)\npadme_amidala_encoded_Very favorably\npadme_amidala_encoded_Very unfavorably\nstar_trek_fan_encoded_Greedo\nstar_trek_fan_encoded_Han\nstar_trek_fan_encoded_I don't understand this question\nstar_trek_fan_encoded_None\nlando_calrissian_encoded_No\nlando_calrissian_encoded_None\nlando_calrissian_encoded_Yes\nexpanded_universe_fan_encoded_No\nexpanded_universe_fan_encoded_None\nexpanded_universe_fan_encoded_Yes\nseen_episode_i_encoded_No\nseen_episode_i_encoded_None\nseen_episode_i_encoded_Yes\nwho_shot_first_encoded_Female\nwho_shot_first_encoded_Male\nwho_shot_first_encoded_None\nranked_film_6_encoded_East North Central\nranked_film_6_encoded_East South Central\nranked_film_6_encoded_Middle Atlantic\nranked_film_6_encoded_Mountain\nranked_film_6_encoded_New England\nranked_film_6_encoded_None\nranked_film_6_encoded_Pacific\nranked_film_6_encoded_South Atlantic\nranked_film_6_encoded_West North Central\nranked_film_6_encoded_West South Central\nseen_episode_ii_encoded_True\nemperor_palpatine_encoded_0\nemperor_palpatine_encoded_1\nemperor_palpatine_encoded_2\nemperor_palpatine_encoded_3\nemperor_palpatine_encoded_4\nstar_wars_fan_encoded_0\nstar_wars_fan_encoded_1\nstar_wars_fan_encoded_2\nstar_wars_fan_encoded_3\nstar_wars_fan_encoded_4\nstar_wars_fan_encoded_5\n\n\n\n\n0\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n\n\n2\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n1.000000\n1.000000\n1.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n1.000000\n1.000000\n1.000000\n1.000000\n1.000000\n1.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n\n\n3\n0.000000\n1.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n2.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n1.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n2.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n\n\n4\n0.000000\n1.000000\n2.000000\n2.000000\n2.000000\n2.000000\n0.000000\n0.000000\n2.000000\n2.000000\n2.000000\n2.000000\n0.000000\n1.000000\n0.000000\n2.000000\n0.000000\n1.000000\n0.000000\n2.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n2.000000\n1.000000\n2.000000\n0.000000\n2.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n3.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n\n\n5\n0.000000\n2.000000\n2.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n2.000000\n0.000000\n3.000000\n0.000000\n0.000000\n0.000000\n3.000000\n0.000000\n2.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n2.000000\n2.000000\n3.000000\n1.000000\n2.000000\n0.000000\n0.000000\n2.000000\n2.000000\n0.000000\n4.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n1.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n\n\n\n\n\n\n\n\n\nHowever, I forked the dataset and I ran my own custom encoder on each column. I find one hot encoders explosion of the number of columns - one per unique string value in each column - can create hundreds or thousands of columns. Instead, I convert each unique string value to a unique numeric within the column. For these narratives, I find the narrow data easier to explain and manipulate.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5: ML Predictions - Star Wars Fan Survey"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html#task-3---validate-data-integrity",
+    "href": "Projects/project5.html#task-3---validate-data-integrity",
+    "title": "Client Report - Star Wars and household income",
+    "section": "Task 3 - Validate data integrity",
+    "text": "Task 3 - Validate data integrity\n\n\ndisplay percent of movies seens\nfilm_column_list = ['seen_episode_vi','seen_episode_v','seen_episode_iv','seen_episode_iii','seen_episode_ii','seen_episode_i']\nfilm_view_counts = pd.DataFrame()\n\n# walk the columns and build the dataset\nfor c in film_column_list:\n    film_view_counts = pd.concat([film_view_counts,df_filtered[c].value_counts().drop('None')])\n\n# flatten the index and rename columns\nfilm_view_counts = film_view_counts.reset_index()\nfilm_view_counts.columns = ['movie',\"count\"]\n\n# create percent, drop count\nfilm_view_counts['percent'] = round(film_view_counts['count']/len(df_filtered),2)*100\nfilm_view_counts = film_view_counts.drop('count',axis=1)\n\n# create and show chart\n\nbar_chart_1 = px.bar(film_view_counts,x='percent',y='movie', text_auto = True,\n    title=f\"of {len(df_filtered)} respondents who have seen any film\", color='percent', color_continuous_scale=color_map)\n\n\n\nWhich ‘Star Wars’ Movies Have You Seen?\n\n\n\nbar_chart_1.show()\n\n\n                                                \n\n\n\n\ndisplay character favorability\ncharacter_column_list = ['han_solo', 'luke_skywalker', 'leia_organa', 'anakin_skywalker', 'obi_win_kenobi', 'emperor_palpatine',\n  'darth_vader', 'lando_calrissian', 'boba_fett', 'c_3po', 'r2_d2', 'jar_jar_binks', 'padme_amidala', 'yoda']\ncharacter_df = df_filtered[character_column_list]\ncharacter_counts_df = pd.DataFrame()\n\n# create category lists\nfavorable = ['Very favorably', 'Somewhat favorably']\nneutral = ['Neither favorably nor unfavorably (neutral)']\nunfavorable = ['Somewhat unfavorably', 'Very unfavorably']\nunfamiliar = ['Unfamiliar (N/A)']\n\n# walk each character and count results\nfor c in character_column_list:\n    current_count = df_filtered[c].value_counts().drop('None')\n    current_count_df = pd.DataFrame(current_count).reset_index()\n\n    favorable_count = sum(current_count_df.query(f\"{c} in {favorable}\")['count'])\n    neutral_count = sum(current_count_df.query(f\"{c} in {neutral}\")['count'])\n    unfavorable_count = sum(current_count_df.query(f\"{c} in {unfavorable}\")['count'])\n    unfamiliar_count = sum(current_count_df.query(f\"{c} in {unfamiliar}\")['count'])\n    total_count = sum([favorable_count,neutral_count,unfavorable_count,unfamiliar_count])\n    favorable_pct = round(favorable_count/total_count,2)*100\n    neutral_pct = round(neutral_count/total_count,2)*100\n    unfavorable_pct = round(unfavorable_count/total_count,2)*100\n    unfamiliar_pct = round(unfamiliar_count/total_count,2)*100\n    temp_counts_df = pd.DataFrame([[c,favorable_pct,neutral_pct,unfavorable_pct,unfamiliar_pct]])\n\n    # add to our count dataframe\n    character_counts_df = pd.concat([character_counts_df,temp_counts_df])        \n\n# set column names\ncharacter_counts_df.columns = ['character','favorable','neutral','unfavorable','unfamiliar']\n\n# set index to character\ncharacter_counts_df = character_counts_df.set_index('character').reset_index()\n\n# set color\ncolor_map = sns.light_palette(\"#257d98\", as_cmap=True)\n\n# sort table\ncharacter_counts_df.sort_values(by='favorable',ascending=False, inplace=True)\n\n\n\n\n‘Star Wars’ Characters Favorability Ratings\n\n\n\n# show table\ndisplay(character_counts_df.style \\\n        .hide(axis='rows') \\\n        .bar(subset=['favorable','neutral','unfavorable','unfamiliar'],vmax=100, cmap=color_map) \n        .format(precision=0) \n        \n)\n# show dataframe for renaming```\n\n\n\n\n\n\n\n\ncharacter\nfavorable\nneutral\nunfavorable\nunfamiliar\n\n\n\n\nluke_skywalker\n93\n5\n2\n1\n\n\nhan_solo\n92\n5\n1\n2\n\n\nleia_organa\n91\n6\n2\n1\n\n\nobi_win_kenobi\n91\n5\n2\n2\n\n\nyoda\n91\n6\n2\n1\n\n\nr2_d2\n90\n7\n2\n1\n\n\nc_3po\n85\n10\n4\n2\n\n\nanakin_skywalker\n63\n16\n15\n6\n\n\ndarth_vader\n58\n10\n30\n1\n\n\nlando_calrissian\n45\n29\n9\n18\n\n\npadme_amidala\n43\n25\n11\n20\n\n\nboba_fett\n36\n31\n17\n16\n\n\nemperor_palpatine\n31\n26\n24\n19\n\n\njar_jar_binks\n30\n20\n37\n13",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5: ML Predictions - Star Wars Fan Survey"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html#task-4---build-ml-model",
+    "href": "Projects/project5.html#task-4---build-ml-model",
+    "title": "Client Report - Star Wars and household income",
+    "section": "Task 4 - Build ML Model",
+    "text": "Task 4 - Build ML Model\nBuild a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.\n\n\nbuild ML\n# create lists for results sets analysis\nresults_accuracy_full = []\nresults_accuracy_age_gender_location_education = []\nresults_accuracy_education = []\nresults_accuracy_age = []\nresults_accuracy_gender = []\nresults_accuracy_location = []\n\nresults_feature_importance_full = []\nresults_feature_importance_age_gender_location_education = []\nresults_feature_importance_education = []\nresults_feature_importance_age = []\nresults_feature_importance_gender = []\nresults_feature_importance_location = []\n\n# we will run N iterations, and set row count of display to a sqrt(n) size grid\nresult_count = 25\nrow_count = int(math.sqrt(result_count))\n\n# constants for values in lists\ndataset_index = 0\naccuracy_index = 1\nfeature_index = 2\nname_index = 3\n\n# put the dataset and results lists in a list to iterate over\ndatasets = [[df_encoded, \n              results_accuracy_full, \n              results_feature_importance_full,\n              'All Columns'],\n            [df_encoded[['age_encoded','gender_encoded','location_encoded','education_encoded']], \n              results_accuracy_age_gender_location_education,\n              results_feature_importance_age_gender_location_education,\n              'Age, Gender, Location, Education'],\n            [df_encoded[['education_encoded']],\n              results_accuracy_education,\n              results_feature_importance_education,\n              'Education'],\n            [df_encoded[['age_encoded']],\n              results_accuracy_age,\n              results_feature_importance_age,\n              'Age'],\n             [df_encoded[['location_encoded']],\n              results_accuracy_location,\n              results_feature_importance_location,\n              'Location'],\n            [df_encoded[['gender_encoded']],\n              results_accuracy_gender,\n              results_feature_importance_gender,\n              'Gender']\n]   \n\n# do this N times\nwhile len(results_accuracy_full) &lt; result_count:\n\n    # iterate the datasets\n    for d in datasets:\n\n        # split the data\n        x_train, x_test, y_train, y_test = train_test_split(d[dataset_index],y)\n\n        # #create the model\n        extra_trees_model = ExtraTreesClassifier()\n\n        # generate the data\n        accuracy_result, feature_result = train_test_model(extra_trees_model,\n                            x_train,\n                            x_test,\n                            y_train,\n                            y_test)\n\n        # place the data in the lists\n        d[accuracy_index].append(accuracy_result)\n        d[feature_index].append(feature_result)\n\n# walk the datasets to create feature data for any sets with more than 1 row\n\nhistogram_list = []\ngrid_list = []\nmean_list = []\nfor d in datasets:\n    #create a dataset for the feature data\n    temp_feature_dataframe = pd.DataFrame(d[feature_index])\n\n    #if dataframe has more than one feature, show a histogram\n    if len(temp_feature_dataframe.columns) &gt; 1:\n        #create a dataset for the feature mean data\n        temp_feature_means_dataframe = pd.DataFrame(zip(d[dataset_index].columns,temp_feature_dataframe.mean()))\n        temp_feature_means_dataframe.columns = ['feature','importance']\n\n        #create a histogram\n        temp_histogram = px.histogram(temp_feature_means_dataframe,\n            y='feature',\n            x='importance',\n            title=f'{d[name_index]} Feature Importance',\n                    labels={'sum of importance':'importance'})\n        # show histogram\n        histogram_list.append(temp_histogram)\n\n    # add grid to list\n    grid_list.append(create_grid_from_data(d[accuracy_index],row_count,d[name_index]))\n\n    mean_list.append([d[name_index],round(mean(d[accuracy_index]),3)])\n\nmean_df = pd.DataFrame(mean_list)\nmean_df.columns = [\"columns\",\"accuracy\"]\nmean_df.set_index('columns').reset_index()\nmean_df.sort_values('accuracy', inplace=True, ascending=False)\n\n\nI evaluated 4 different models with 6 different data sets. The Extra Trees Classifier had the best results out of: - Extra Trees Classifier - Random Forest Classifier - Gaussian Naive Bayes Classifier - Decision Tree Classifier\nThen I ran 25 unique split/tests against each of the 6 data sets. - All Columns - demographic columns (age, gender, location, education) - age - gender - location - education\n\nSummary means\n\n\nShow the code\n# display means from the various column sets\ndisplay(mean_df.style.hide(axis='rows') \\\n    .format(precision=3).set_table_styles(table_style))\n\n\n\n\n\n\n\n\ncolumns\naccuracy\n\n\n\n\nLocation\n0.774\n\n\nGender\n0.771\n\n\nEducation\n0.767\n\n\nAge\n0.764\n\n\nAll Columns\n0.760\n\n\nAge, Gender, Location, Education\n0.720\n\n\n\n\n\n\nWhile there is almost no difference between 5 of the 6 column sets, it appears that using the 4 demographic columns causes overfitting, and drops several percentage points.\n\n\nAll Columns Accuracy Data\n\n\nShow the code\n# display All Columns Accuracy Data\ndisplay(grid_list[0])\n\n\n\n\n\n\n\n\n0\n0.770\n0.789\n0.742\n0.766\n0.746\n\n\n1\n0.746\n0.737\n0.780\n0.761\n0.770\n\n\n2\n0.785\n0.775\n0.770\n0.799\n0.746\n\n\n3\n0.742\n0.756\n0.737\n0.751\n0.737\n\n\n4\n0.751\n0.785\n0.746\n0.761\n0.742\n\n\n\n\n\n\n\n\nDemographic Columns Accuracy Data\n\n\nShow the code\n# display Demographic Columns Accuracy Data\ndisplay(grid_list[1])\n\n\n\n\n\n\n\n\n0\n0.713\n0.689\n0.718\n0.737\n0.742\n\n\n1\n0.756\n0.708\n0.732\n0.689\n0.722\n\n\n2\n0.722\n0.761\n0.732\n0.737\n0.684\n\n\n3\n0.756\n0.722\n0.708\n0.689\n0.722\n\n\n4\n0.737\n0.718\n0.718\n0.699\n0.679\n\n\n\n\n\n\n\n\nEducation Column Accuracy Data\n\n\nShow the code\n# display Demographic Columns Accuracy Data\ndisplay(grid_list[2])\n\n\n\n\n\n\n\n\n0\n0.789\n0.742\n0.756\n0.785\n0.761\n\n\n1\n0.742\n0.809\n0.751\n0.775\n0.732\n\n\n2\n0.785\n0.751\n0.785\n0.789\n0.746\n\n\n3\n0.751\n0.761\n0.746\n0.713\n0.785\n\n\n4\n0.775\n0.770\n0.785\n0.789\n0.794\n\n\n\n\n\n\n\n\nAge Column Accuracy Data\n\n\nShow the code\n# display Demographic Columns Accuracy Data\ndisplay(grid_list[3])\n\n\n\n\n\n\n\n\n0\n0.780\n0.751\n0.789\n0.766\n0.775\n\n\n1\n0.770\n0.794\n0.766\n0.785\n0.727\n\n\n2\n0.789\n0.751\n0.756\n0.746\n0.727\n\n\n3\n0.761\n0.799\n0.756\n0.775\n0.708\n\n\n4\n0.751\n0.794\n0.775\n0.722\n0.785\n\n\n\n\n\n\n\n\nLocation Column Accuracy Data\n\n\nShow the code\n# display Demographic Columns Accuracy Data\ndisplay(grid_list[4])\n\n\n\n\n\n\n\n\n0\n0.823\n0.761\n0.766\n0.780\n0.794\n\n\n1\n0.761\n0.799\n0.775\n0.809\n0.742\n\n\n2\n0.761\n0.761\n0.799\n0.780\n0.761\n\n\n3\n0.780\n0.746\n0.780\n0.780\n0.746\n\n\n4\n0.751\n0.756\n0.761\n0.789\n0.780\n\n\n\n\n\n\n\n\nGender Column Accuracy Data\n\n\nShow the code\n# display Demographic Columns Accuracy Data\ndisplay(grid_list[5])\n\n\n\n\n\n\n\n\n0\n0.809\n0.742\n0.823\n0.785\n0.751\n\n\n1\n0.794\n0.746\n0.766\n0.766\n0.751\n\n\n2\n0.775\n0.746\n0.789\n0.789\n0.789\n\n\n3\n0.732\n0.799\n0.722\n0.775\n0.785\n\n\n4\n0.766\n0.751\n0.785\n0.708\n0.833",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5: ML Predictions - Star Wars Fan Survey"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html#recommendation",
+    "href": "Projects/project5.html#recommendation",
+    "title": "Client Report - Star Wars and household income",
+    "section": "Recommendation",
+    "text": "Recommendation\nUsing Location within the Star Wars dataset has a slightly higher higher accuracy than other column selections at 0.774.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 5: ML Predictions - Star Wars Fan Survey"
+    ]
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Adam Ulrich",
+    "section": "",
+    "text": "I’m a detail-oriented servant-leader by choice. As a passionate mentor, coach, and leader, I believe that how we do things is at least as important as what we do. I care deeply about the quality of what we deliver and consider quality the most important feature my team ships.\nadamulrich@hotmail.com | LinkedIn | Github Projects"
+  },
+  {
+    "objectID": "resume.html#director-of-softare-engineering",
+    "href": "resume.html#director-of-softare-engineering",
+    "title": "Adam Ulrich",
+    "section": "",
+    "text": "I’m a detail-oriented servant-leader by choice. As a passionate mentor, coach, and leader, I believe that how we do things is at least as important as what we do. I care deeply about the quality of what we deliver and consider quality the most important feature my team ships.\nadamulrich@hotmail.com | LinkedIn | Github Projects"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Adam Ulrich",
+    "section": "Education",
+    "text": "Education\n\nB.S. Software Development\n2022 - 2024 Brigham Young University - Idaho, Rexburg, ID\n\n4.0 GPA\nCertificates awarded in:\n\nSoftware Development\nWeb and Computer Programming\nWeb Development"
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Adam Ulrich",
+    "section": "Skills",
+    "text": "Skills\n\nAWS and Azure knowledge/experience\nData and database expertise\nBuild/infra systems expertise\nExpert in testing and test automation\nExperience in software engineering across DEV, TEST, PM, OPS and SRE\nRecent experience in Python, Node.js, JavaScript and PHP\nExperience with .Net, VB, C#\nExtensive experience with offshoring\nDemonstrated organizational agility"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Adam Ulrich",
+    "section": "Experience",
+    "text": "Experience\n\nDremio Corportation\nSanta Clara, CA, Oct 2023 to present\nDirector of Engineering, Developer Experience, 2023 - present. Remotely based in the Seattle, WA area, responsibilities included managing of team of 25 that oversee build systems, CI/CD, QA, performance infrastructure, branch health and release operations.\n\n\nTableau Software/ Salesforce\nSeattle, WA, Sep 2018 – Oct 2023\nSenior Engineering Manager, Developer Productivity & Experience, 2020-2023. Primary responsibilities included build and infrastructure systems, testing pipelines, cloud lab infrastructure and developer tooling. Accomplishments include cloud cost reduction, patch management, tableau server as a service, vulnerability management, and reducing noise in service health signals.\nSenior Engineering Manager, Tableau Prep Builder, 2018-2020 Oversaw the delivery of data cleaning and data preparation features.\n\n\nMicrosoft\nRedmond, WA, Mar 1996 – Sep 2018\nPrincipal SWE Manager, SRE Manager and PM, Microsoft Dynamics, 2016-2018 Responsible for Tier 3 support team for Dynamics Online, including email services and performance testing. Extensive use of Azure. Drove transition to Agile Methodology for team.\nPrincipal Test Manager, Microsoft Physical Stores, 2011-2016 Responsible for all testing in Microsoft Stores, including POS and CRM, including integrations with dozens of other systems. Extensive hardware and software testing, along with offshore team management.\nPrincipal Test Manager, Microsoft Expression Blend & Design, 2003-2011 Shipped Expression Blend and Design, 1, 2, 3, and 4. Awarded 3 patents for test automation. 3x DevDiv Mgr. Excellence Award. Led Expression offshoring, driving cost reductions and quality improvements.\nSenior Test Lead, STE, SDET, Developer Division, 1996-2002 Primary technical focus on database metadata and visual design. Responsible for test automation system design and implementation.\n\n\nPatents\n\nPatent 7,823,132: Loosely Coupled Comprehensive Verification\nPatent 7,457,989: Execution Behavior Manager\nPatent 7,398,514: Test Automation Stack Layering"
+  },
+  {
     "objectID": "Templates/DS250_Template.html",
     "href": "Templates/DS250_Template.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Uncomment the entire section to use this template\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Templates/DS350_Template.html",
-    "href": "Templates/DS350_Template.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "TODO: Update with template from Paul\n\n\n\n\n Back to top"
   }
 ]

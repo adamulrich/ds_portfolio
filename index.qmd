@@ -1,11 +1,48 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
+title: "about Adam"
+subtitle: "random facts about me...."
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Non resume stuff
+## Hobbies
+- I love puzzle competitions, like these: [Microsoft Puzzles](https://puzzlehunt.azurewebsites.net/). 
+- I came in 3rd place in a company wide Windows Solitaire competition amongst Microsoft employees.
+- I've been playing chess since I was 8. My favorite openings are the Dutch Defense and Bird's.
+- I've been playing fantasy sports since pre-internet. In fact, I got my first job at Microsoft through the skills I learned (VB and Access) to build my own fantasy sports software.
+- Atari-ST enthusiast! [Sundog](https://en.wikipedia.org/wiki/SunDog:_Frozen_Legacy) and [Dungeon Master](https://en.wikipedia.org/wiki/Dungeon_Master_(video_game)) and the sequel [Chaos Strikes Back](https://en.wikipedia.org/wiki/Chaos_Strikes_Back) were the best.
+- I have over 1000 CDs of primarily 70's and 80's classic rock.
+- I have over 1200 DVD's (ripped to a raid array of course - [KODI](https://kodi.tv/) is the best!)
+- I am a big sports fan. Washington Huskies, Seattle Seahawks, and Seattle Mariners. I hope the Sonics return soon. I haven't watched the NBA since they left.
+- I have 6 3d printers in the house. Primarily to help my son run [DuoDocks](https://duodocks.square.site/).
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+## Family
+- I'm the father of 6 adult children (ages 20-35).
+- I've been married for 37 years.
+- I am a member of the Church of Jesus Christ of Latter-day Saints.
+- My kids think I listen to [Yacht Rock](https://en.wikipedia.org/wiki/Yacht_rock) way too much.
+- My kids are talented singer/songwriter/multi-instrumentalists.
+- I totally live vicariously through their gifts.
+    - [Jackson's Orange Album](https://distrokid.com/hyperfollow/jacksonmatthew1/orange-3)
+    - [Birthday Concert](https://www.youtube.com/watch?v=nm8piBR1_IE)
+    - [Garrison's 4EFB](https://www.youtube.com/@4everfreebrony)
 
+## Random
+- I've lived in 55+ homes in my life.
+- I attended 18 schools prior to High School graduation.
+- I've resided in 17 states.
+- No, I won't name them for you.
+- OK, I will: CA, WA, OR, AZ, ID, CO, MO, IA, AR, PA, GA, NC, SC, NY, NJ, ME, VA
+- I haven't moved in 24 years.
+- No my dad wasn't moving us do to being in the military. 
+- But my dad was in the Air Force - before I was born.
+- Between my first software work in my early 20's and my start at Microsoft in my early 30's, I spent 10 years as a [Nuclear Health Physics Technician](https://stem.getintoenergy.com/module7-2/nuclear-health-physics-technician/) working at nuclear power generating stations and Dept of Energy sites. I can talk for hours about nuclear power if you ask.
+
+## Computers
+- I first learned to write code on a DEC pdp-11/32 mini. 
+- My first home computer was an Atari 800, and I saved my programs to a cassette tape. And it took forever to write.
+- My first hard drive was 10MB for my Atari 1040ST, and was the size of a shoebox. And it cost $1000. And it was awesome.
+- I think you can learn everything about procedural coding basics in 9 weeks. Declaration, Assignment, Computation, Looping, Branching, Conditional Evaluation. That's it.
+- I think that Object Oriented programming is a big jump from procedural programming, and takes a bit longer. But it is soooo worth it!
+- I am an avid Microsoft Surface Duo fan.
+- [Ecco the Dolphin](https://en.wikipedia.org/wiki/Ecco_the_Dolphin) was the greatest Sega Genesis game of all time.
